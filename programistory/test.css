@@ -1,0 +1,16 @@
+nav{
+    position:fixed;
+    float:left;
+    height: 100%;
+    width: 150px;
+    background-color: bisque;
+}
+
+main {
+    padding-left: 170px;
+    padding-top: 70px;
+}
+
+.grid-container {
+    position: relative;
+}
