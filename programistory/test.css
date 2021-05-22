@@ -1,3 +1,8 @@
+*
+{
+    scroll-behavior: smooth;
+}
+
 nav{
     position:fixed;
     float:left;
@@ -10,6 +15,7 @@ nav{
 
 main {
     padding-right: 150px;
+    background-image: url("Images/BackgroundImg.jpg");
 }
 
 .tooltip .tooltiptext {
