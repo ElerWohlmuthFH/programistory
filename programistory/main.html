@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="test.css">
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            height: 200px;
+            max-height: 200px;
+        }
+        .grid-item:hover{
+            border: 4px solid black;
+
+        }
+    </style>
 </head>
 <body>
 
@@ -14,51 +35,51 @@
 <nav>
     <h2> Jahrzehnte </h2>
     <ul>
-        <li><a href="#2010"> 2010</a> </li>
-        <li><a href="#2020"> 2020</a> </li>
-        <li><a href="#2030"> 2030</a> </li>
-        <li><a href="#2040"> 2040</a> </li>
-        <li><a href="#2050"> 2050</a> </li>
-        <li><a href="#2060"> 2060</a> </li>
-        <li><a href="#2070"> 2070</a> </li>
-        <li><a href="#2080"> 2080</a> </li>
+        <li><a href="#2010"> 2010</a></li>
+        <li><a href="#2020"> 2020</a></li>
+        <li><a href="#2030"> 2030</a></li>
+        <li><a href="#2040"> 2040</a></li>
+        <li><a href="#2050"> 2050</a></li>
+        <li><a href="#2060"> 2060</a></li>
+        <li><a href="#2070"> 2070</a></li>
+        <li><a href="#2080"> 2080</a></li>
     </ul>
 </nav>
 
 <main>
-    <div id="2010"><p class="boxLeft">Dies ist ein <p> Text mit Rahmen</p></div>
-    <div id="2020"><p class="boxCenter">Dies ist ein  Text mit Rahmen</p></div>
-    <div id="2030"><p class="boxRight">Dies ist ein  Text mit Rahmen</p></div>
+    <div class="grid-container">
+        <div id="2010" class="grid-item"><div class="tooltip">Grace Hopper
+            <span class="tooltiptext">Mathematician Grace Hopper completes A-0, a program that allows a computer user to use English-like words instead of numbers to give the computer instructions. It possessed several features of a modern-day compiler and was written for the UNIVAC I computer, the first commercial business computer system in the United States.</span>
+        </div></div><div></div><div></div><div></div><div></div>
+        <div id="2020" class="grid-item"><div class="tooltip"> Ada Lovelace
+        <span class="tooltiptext"> Bezeichnend ist, dass ihr wissenschaftlicher Beitrag zu ihren Lebzeiten kaum Anerkennung fand. Erst Mitte des 20. Jahrhunderts, mit Beginn des Computerzeitalters, wurde die Bedeutung ihrer Schriften erkannt. Heutzutage ist sie weltberühmt, nicht zuletzt, weil in den 1970er-Jahren die Computersprache ADA nach ihr benannt wurde. Aufgrund ihrer Leistungen wird sie zu Recht als Pionierin der modernen Informatik bezeichnet.  </span></div></div>
+        <div empty="grid-item">7</div>
+        <div empty="grid-item">8</div>
+        <div empty="grid-item">9</div>
+        <div empty="grid-item">10</div>
+        <div id="2030" class="grid-item"><div class="tooltip"> Eler Wohlmuth
+        <span class="tooltiptext"> Eler Wohlmuth wird seiner Zeit der beste Programmierer auf der Welt sein. Ich würde auch gerns so viel können wie er.</span></div> </div>
+        <div empty="grid-item">12</div>
+        <div empty="grid-item">13</div>
+        <div empty="grid-item">14</div>
+        <div empty="grid-item">15</div>
+        <div id="2040" class="grid-item">16</div>
+        <div empty="grid-item">17</div>
+        <div empty="grid-item">18</div>
+        <div id="2050" class="grid-item">4</div>
+        <div empty="grid-item">5</div>
+        <div empty="grid-item">6</div>
+        <div id="2060" class="grid-item">7</div>
+        <div empty="grid-item">8</div>
+        <div empty="grid-item">9</div>
+        <div id="2070" class="grid-item">10</div>
+        <div empty="grid-item">11</div>
+        <div empty="grid-item">12</div>
+        <div empty="grid-item">13</div>
 
-    <div id="2040"><p class="boxCenter">Dasdjkfbasjkhdfbjshldbnaldnkfasj</p></div>
-    <div id="2050"><p class="boxLeft">Dies ist ein <span style="color:blue">Text</span> mit Rahmen</p></div>
-    <div id="2060"><p class="boxCenter">Dies ist ein  Text mit Rahmen</p></div>
-    <div id="2070"><p class="boxRight">Dies ist ein  Text mit Rahmen</p></div>
-    <div id="2080"><p class="boxCenter">Dies ist ein  Text mit Rahmen</p></div>
-    <div class="tooltipFarLeft">Hover over me <span class="tooltiptext">Tooltip text</span></div>
-
-    <div class="row">
-        <div class="column"> <p> Hallo </p></div>
-        <div class="column"> <p> Halo </p></div>
-        <div class="column"> <p> Hao </p> </div>
-        <div class="column"> <p> Ha </p> </div>
     </div>
-
-
 </main>
 
-<aside>
-<h2>Login:</h2>
-    <textarea name="id" id="id" rows="1"></textarea>
-    <textarea name="pw" id="pw" rows="1"></textarea>
-    <input type="submit" value="Submit" class="button">
-</aside>
-
-<footer>
-    <address>
-        <p>Nur Sarhan, <br> Eler Wohlmuth, <br>Matthias Werlk  <br>Jakob Welna </p>
-    </address>
-</footer>
 
 </body>
 </html>
