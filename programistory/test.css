@@ -3,8 +3,10 @@ nav{
     float:left;
     height: 100%;
     width: 150px;
+    right: 0px;
     background-color: bisque;
 }
+
 
 main {
     padding-left: 170px;
@@ -13,4 +15,6 @@ main {
 
 .grid-container {
     position: relative;
+    left: 0px;
 }
+
