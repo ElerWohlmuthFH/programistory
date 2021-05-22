@@ -2,7 +2,7 @@ header{
 
     position:fixed;
     float:top;
-    height: 125px;
+    height: 75px;
     width: 100%;
     text-align: center;
     background-color: grey;
@@ -28,7 +28,6 @@ img:hover{
     left:0;
 }
 .center{
-
     padding-left: 33%;
 
 
@@ -87,4 +86,95 @@ main {
 img:hover{
     color: black;
     background: black;
+}
+
+.boxLeft{
+    box-sizing: border-box;
+    border: 10px solid gray;
+    padding: 15px;
+    width: 200px;
+}
+.boxCenter{
+    box-sizing: border-box;
+    border: 10px solid gray;
+    padding: 15px;
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+.boxRight{
+    box-sizing: border-box;
+    border: 10px solid gray;
+    padding: 15px;
+    width: 200px;
+    float: right;
+}
+#2040:hover{
+    background-color: black;
+}
+.tooltipFarLeft {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    padding: 15px;
+    width: 25%;
+
+}
+.tooltipLeft {
+    position: relative;
+    display: inline-block;
+   /* border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+    box-sizing: border-box;
+    border: 2px solid gray;
+    padding: 15px;
+    width: 25%;
+}
+.tooltipRight {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    padding: 15px;
+    width: 25%;
+}
+.tooltipFarRight {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    padding: 15px;
+    width: 25%;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.column {
+    float: left;
+    width: 25%;
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
