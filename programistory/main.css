@@ -1,0 +1,160 @@
+*
+{
+    scroll-behavior: smooth;
+}
+
+main {
+    margin-top: -50%;
+}
+
+
+.tooltip .tooltiptextLeft {
+    visibility: hidden;
+    width: 350%;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%;
+}
+.tooltip:hover .tooltiptextLeft {
+    visibility: visible;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 350%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+nav ul li a:hover{
+    background-color: grey;
+    border-left: red;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 270px;
+    max-height: 270px;
+}
+.grid-item:hover{
+    border: solid red;
+
+}
+
+
+
+:root {
+    --scale: 0.1;
+}
+
+body {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(5, 15%, 5%);
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+
+.page-title {
+    text-align: center;
+}
+
+.section {
+    transform: scaleY(calc(1 - var(--scale))); /*PARALLAX EFFECT*/
+}
+
+.content {
+    position: relative;
+}
+
+.image-container {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image-container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+    background: linear-gradient(
+            to bottom,
+            hsla(5, 15%, 5%, 0) 0%,
+            hsla(5, 15%, 5%, 0.013) 8.1%,
+            hsla(5, 15%, 5%, 0.049) 15.5%,
+            hsla(5, 15%, 5%, 0.104) 22.5%,
+            hsla(5, 15%, 5%, 0.175) 29%,
+            hsla(5, 15%, 5%, 0.259) 35.3%,
+            hsla(5, 15%, 5%, 0.352) 41.2%,
+            hsla(5, 15%, 5%, 0.45) 47.1%,
+            hsla(5, 15%, 5%, 0.55) 52.9%,
+            hsla(5, 15%, 5%, 0.648) 58.8%,
+            hsla(5, 15%, 5%, 0.741) 64.7%,
+            hsla(5, 15%, 5%, 0.825) 71%,
+            hsla(5, 15%, 5%, 0.896) 77.5%,
+            hsla(5, 15%, 5%, 0.951) 84.5%,
+            hsla(5, 15%, 5%, 0.987) 91.9%,
+            hsl(5, 15%, 5%) 100%
+    ), linear-gradient(to top,
+            hsla(5, 15%, 5%, 0) 0%,
+            hsla(5, 15%, 5%, 0.013) 8.1%,
+            hsla(5, 15%, 5%, 0.049) 15.5%,
+            hsla(5, 15%, 5%, 0.104) 22.5%,
+            hsla(5, 15%, 5%, 0.175) 29%,
+            hsla(5, 15%, 5%, 0.259) 35.3%,
+            hsla(5, 15%, 5%, 0.352) 41.2%,
+            hsla(5, 15%, 5%, 0.45) 47.1%,
+            hsla(5, 15%, 5%, 0.55) 52.9%,
+            hsla(5, 15%, 5%, 0.648) 58.8%,
+            hsla(5, 15%, 5%, 0.741) 64.7%,
+            hsla(5, 15%, 5%, 0.825) 71%,
+            hsla(5, 15%, 5%, 0.896) 77.5%,
+            hsla(5, 15%, 5%, 0.951) 84.5%,
+            hsla(5, 15%, 5%, 0.987) 91.9%,
+            hsl(5, 15%, 5%) 100%);
+}
+
