@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="test.css">
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Parallax</title>
+
     <style>
         .grid-container {
             display: grid;
@@ -19,13 +21,13 @@
             text-align: center;
             height: 200px;
             max-height: 200px;
+            width: 500px;
         }
         .grid-item:hover{
             border: 4px solid black;
 
         }
     </style>
-
 </head>
 <body>
 
@@ -33,81 +35,77 @@
     <h1>PROGRAMISTORY - by Nur Sarhan, Eler Wohlmuth, Matthias Werlk & Jakob Welna</h1>
 </header>
 
-<nav>
-    <h2> Jahrzehnte </h2>
-    <ul>
-        <li><a href="#2010"> 2010</a></li>
-        <li><a href="#2020"> 2020</a></li>
-        <li><a href="#2030"> 2030</a></li>
-        <li><a href="#2040"> 2040</a></li>
-        <li><a href="#2050"> 2050</a></li>
-        <li><a href="#2060"> 2060</a></li>
-        <li><a href="#2070"> 2070</a></li>
-        <li><a href="#2080"> 2080</a></li>
-    </ul>
-</nav>
+<main class="wrapper">
+    <section class="section parallax bg1">
+
+        <nav>
+            <h2> Jahrzehnte </h2>
+            <ul>
+                <li><a href="#2010"> 2010</a></li>
+                <li><a href="#2020"> 2020</a></li>
+                <li><a href="#2030"> 2030</a></li>
+                <li><a href="#2040"> 2040</a></li>
+                <li><a href="#2050"> 2050</a></li>
+                <li><a href="#2060"> 2060</a></li>
+                <li><a href="#2070"> 2070</a></li>
+                <li><a href="#2080"> 2080</a></li>
+            </ul>
+        </nav>
+
+        <div class="grid-container">
+
+            <div id="2010" class="grid-item"><div class="tooltip">Grace Hopper
+                <span class="tooltiptext">Mathematician Grace Hopper completes A-0, a program that allows a computer user to use English-like words instead of numbers to give the computer instructions. It possessed several features of a modern-day compiler and was written for the UNIVAC I computer, the first commercial business computer system in the United States.</span>
+
+            </div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div id="2020" class="grid-item" style="background-image: url('Images/backround.jpg'); "><div class="tooltip"> Ada Lovelace
+                <span class="tooltiptext"> Bezeichnend ist, dass ihr wissenschaftlicher Beitrag zu ihren Lebzeiten kaum Anerkennung fand. Erst Mitte des 20. Jahrhunderts, mit Beginn des Computerzeitalters, wurde die Bedeutung ihrer Schriften erkannt. Heutzutage ist sie weltberühmt, nicht zuletzt, weil in den 1970er-Jahren die Computersprache ADA nach ihr benannt wurde. Aufgrund ihrer Leistungen wird sie zu Recht als Pionierin der modernen Informatik bezeichnet.  </span></div></div>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <div id="2030" class="grid-item"><div class="tooltip"> (: Eler Wohlmuth :)
+                <span class="tooltiptext"> Eler Wohlmuth wird seiner Zeit der beste Programmierer auf der Welt sein. Ich würde auch gerns so viel können wie er.</span></div> </div>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <section  id="test">
+                <div id="2040" class="grid-item">16</div>
+            </section>
 
 
-<main>
+            <div></div>
+            <div></div>
 
-    <div class="grid-container" data-rellax-speed="-4">
+            <div id="2050" class="grid-item">4</div>
 
-        <div id="2010" class="grid-item" style="background-image: url('Images/Grace_Hopper_Img.jpg'); " ><div class="tooltip">Grace Hopper
-            <span class="tooltiptext">Mathematician Grace Hopper completes A-0, a program that allows a computer user to use English-like words instead of numbers to give the computer instructions. It possessed several features of a modern-day compiler and was written for the UNIVAC I computer, the first commercial business computer system in the United States.</span>
+            <div></div>
+            <div></div>
 
-        </div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+            <div id="2060" class="grid-item">7</div>
 
-        <div id="2020" class="grid-item" style="background-image: url('Images/Ada_Lovelace.jpg'); "><div class="tooltip"> Ada Lovelace
-            <span class="tooltiptext"> Bezeichnend ist, dass ihr wissenschaftlicher Beitrag zu ihren Lebzeiten kaum Anerkennung fand. Erst Mitte des 20. Jahrhunderts, mit Beginn des Computerzeitalters, wurde die Bedeutung ihrer Schriften erkannt. Heutzutage ist sie weltberühmt, nicht zuletzt, weil in den 1970er-Jahren die Computersprache ADA nach ihr benannt wurde. Aufgrund ihrer Leistungen wird sie zu Recht als Pionierin der modernen Informatik bezeichnet.  </span></div></div>
+            <div></div>
+            <div></div>
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+            <div id="2070" class="grid-item">10</div>
 
-        <div id="2030" class="grid-item"><div class="tooltip"> (: Eler Wohlmuth :)
-            <span class="tooltiptextLeft"> Eler Wohlmuth wird seiner Zeit der beste Programmierer auf der Welt sein. Ich würde auch gerns so viel können wie er.</span></div> </div>
+            <div></div>
+            <div></div>
+            <div></div>
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-        <section  id="test">
-            <div id="2040" class="grid-item"><div class="tooltip"> (: Die 3 Helden :)
-            <span class="tooltiptextLeft"> Servus </span></div> </div>
-
+        </div>
     </section>
 
-
-        <div></div>
-        <div></div>
-
-        <div id="2050" class="grid-item">4</div>
-
-        <div></div>
-        <div></div>
-
-        <div id="2060" class="grid-item">7</div>
-
-        <div></div>
-        <div></div>
-
-        <div id="2070" class="grid-item">10</div>
-
-        <div></div>
-        <div></div>
-        <div></div>
-
-
-
-    </div>
 </main>
-
-
 </body>
 </html>
