@@ -7,6 +7,30 @@ main {
     margin-top: -50%;
 }
 
+nav{
+    padding-top: 200px;
+    float:right;
+    height: 100%;
+    width: 200px;
+    right: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+li {
+   padding: 20px;
+    list-style: none;
+}
+nav ul li a:hover{
+    background-color: whitesmoke;
+    border-left: red;
+}
+.current{
+    background-color: black;
+}
+
 
 .tooltip .tooltiptextLeft {
     visibility: hidden;
@@ -47,16 +71,13 @@ main {
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
-nav ul li a:hover{
-    background-color: grey;
-    border-left: red;
-}
 
 
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 10px;
+
 }
 
 .grid-item {
@@ -110,6 +131,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    padding-right: 150px;
     height: 100%;
     object-fit: cover;
 }
@@ -157,4 +179,8 @@ body {
             hsla(5, 15%, 5%, 0.987) 91.9%,
             hsl(5, 15%, 5%) 100%);
 }
+
+
+
+
 
