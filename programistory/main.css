@@ -2,36 +2,56 @@
 {
     scroll-behavior: smooth;
 }
-
+body{
+    margin-right: 200px;
+}
 main {
     margin-top: -50%;
 }
-
 nav{
-    padding-top: 200px;
     float:right;
     height: 100%;
-    width: 200px;
-    right: 10px;
-    position: relative;
+    width: 200px;right:10px;
+    position: fixed;
     z-index: 1;
     overflow: hidden;
 
 }
 
 li {
-   padding: 20px;
+    padding: 10px;
     list-style: none;
 }
-nav ul li a:hover{
-    background-color: whitesmoke;
-    border-left: red;
-}
-.current{
-    background-color: black;
-}
 
 
+ul li {
+    list-style: none;
+    padding: 10px 20px;
+
+}
+ul li a {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+
+}
+
+ul li a::before {
+    content: "";
+    width: 0;
+    height: 10px;
+    background: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+
+ul li a:hover::before {
+    width: 50%;
+    transform: translateX(100%);
+}
 .tooltip .tooltiptextLeft {
     visibility: hidden;
     width: 350%;
@@ -67,6 +87,7 @@ nav ul li a:hover{
     position: absolute;
     z-index: 1;
 }
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -88,14 +109,12 @@ nav ul li a:hover{
     text-align: center;
     height: 270px;
     max-height: 270px;
+    background-size: cover;
 }
 .grid-item:hover{
     border: solid red;
 
 }
-
-
-
 :root {
     --scale: 0.1;
 }
@@ -179,6 +198,9 @@ body {
             hsla(5, 15%, 5%, 0.987) 91.9%,
             hsl(5, 15%, 5%) 100%);
 }
+
+
+
 
 
 
