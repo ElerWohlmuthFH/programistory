@@ -1,15 +1,22 @@
+/*GENERAL*/
+
 *
 {
     scroll-behavior: smooth;
 }
+
+header {
+    text-align: center;
+}
+
 body{
-    margin-right: 200px;
+    margin-right: 15%;
 }
 main {
-    margin-top: -50%;
+    margin-top: -75%;
 }
 nav{
-    float:right;
+    float: right;
     height: 100%;
     width: 200px;right:10px;
     position: fixed;
@@ -17,6 +24,9 @@ nav{
     overflow: hidden;
 
 }
+
+
+
 
 li {
     padding: 10px;
@@ -48,6 +58,8 @@ ul li a::before {
     transition: .5s;
 }
 
+/*HOVER*/
+
 ul li a:hover::before {
     width: 50%;
     transform: translateX(100%);
@@ -55,16 +67,17 @@ ul li a:hover::before {
 .tooltip .tooltiptextLeft {
     visibility: hidden;
     width: 350%;
-    background-color: grey;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    padding: 10px;
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-    top: -5px;
-    right: 105%;
+    /*top: -5px;*/
+    right: 50%;
+    /*display: block;*/
 }
 .tooltip:hover .tooltiptextLeft {
     visibility: visible;
@@ -78,14 +91,15 @@ ul li a:hover::before {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 350%;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
+    background-color: white;
+    color: black;
+    text-align: justify;
+    padding: 10px;
     border-radius: 6px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+    display: block;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -93,6 +107,11 @@ ul li a:hover::before {
     visibility: visible;
 }
 
+
+
+
+
+/*GRID*/
 
 .grid-container {
     display: grid;
@@ -115,6 +134,9 @@ ul li a:hover::before {
     border: solid red;
 
 }
+
+/*PARALLAX*/
+
 :root {
     --scale: 0.1;
 }
