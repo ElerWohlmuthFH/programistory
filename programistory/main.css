@@ -16,21 +16,19 @@ main {
     margin-top: -70%;
 }
 nav{
+    margin-top: -150px;
     float: right;
     height: 100%;
     width: 200px;right:10px;
     position: fixed;
     z-index: 1;
     overflow: hidden;
-
 }
-
-
-
-
+#logo{
+    margin-right: 20px;
+}
 li {
     padding: 10px;
-    list-style: none;
 }
 
 
@@ -75,9 +73,8 @@ ul li a:hover::before {
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-    /*top: -5px;*/
     right: 50%;
-    /*display: block;*/
+   /* display: block; */
 }
 .tooltip:hover .tooltiptextLeft {
     visibility: visible;
@@ -96,7 +93,6 @@ ul li a:hover::before {
     text-align: justify;
     padding: 10px;
     border-radius: 6px;
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
     display: block;
