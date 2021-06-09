@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+
     <link rel="stylesheet" href="main.css">
-    <title>PROGRAMISTORY </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
 </head>
 
 <header>
@@ -12,9 +16,8 @@
 
 </header>
 
-
 <nav>
-    <img id="logo"  src="Images/programistory.png">
+    <img id="logo" src="Images/programistory.png">
     <h2> Jahrzehnte </h2>
     <ul>
         <li><a href="#1840"> 1840</a></li>
@@ -35,7 +38,10 @@
     </ul>
 </nav>
 
+<body>
+
 <main>
+
     <section class="section">
         <figure class="image-container"><img src="Images/backround.jpg" alt="Background"/></figure>
         <article class="content">
@@ -44,36 +50,36 @@
 
             <div class="grid-container">
 
-                <div id="1840" class="grid-item" style="background-image: url('Images/Ada_Lovelace.jpg'); ">
+                <button id="adaLovelace" class="grid-item"
+                        style="background-image: url('Images/Ada_Lovelace.jpg'); ">
                     <div class="tooltip"> Ada Lovelace 1843
-                        <span class="tooltiptext">  Ada s childhood lacked fairy tales and princesses, even though her father was the famed Lord Byron. Instead, her mother raised her on science. Ada Lovelace immediately gravitated towards machines and obsessed over the inventions of the Industrial Revolution. At age 12, Ada envisioned a flying machine with the form of a horse with a steam engine in the inside so contrived as to move an immense pair of wings. Introduced by her mentor to Charles Babbage, at age seventeen Ada Lovelace became interested in the Analytical Engine, the invention the Mathematics professor was working on.
-Expanding on her interest of the machine, Ada Lovelace translated an article written by an Italian mathematician describing the computer-like machine. Impressed with her work, Charles Babbage asked Ada to expand on the article and this is where Ada made history.
-In her article, Ada expounded on the potential uses of the Analytical Engine and wrote several computer programs. She predicted the computers ability to make music and manipulate symbols. With these announcements, Ada can be called a visionary. While Babbage is known as the father of the computer, Ada Lovelace is honoured as the first computer programmer with her lengthy address.  </span>
 
                     </div>
-                </div>
+                </button>
+
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
 
-                <div id="1940" class="grid-item" >
+                <button style="cursor: pointer;" id="graceHopper" class="grid-item">
                     <div class="tooltip"> Plankalkuel 1944-1945
                         <span class="tooltiptext"> Konrad Zuse, who built the first fully automatic, program controlled computer, developed the first "real" programming language called Plankalkuel.</span>
                     </div>
-                </div>
+                </button>
+
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
 
 
-                <div id="1950" class="grid-item" style="background-image: url('Images/Grace_Hopper_Img.jpg')" >
+                <div id="1950" class="grid-item" style="background-image: url('Images/Grace_Hopper_Img.jpg')">
                     <div class="tooltip">Grace Hopper 1952
                         <span class="tooltiptext">Mathematician Grace Hopper completes A-0, a program that allows a computer user to use English-like words instead of numbers to give the computer instructions. It possessed several features of a modern-day compiler and was written for the UNIVAC I computer, the first commercial business computer system in the United States.</span>
                     </div>
-
                 </div>
+
                 <div></div>
                 <div></div>
                 <div></div>
@@ -111,6 +117,7 @@ In her article, Ada expounded on the potential uses of the Analytical Engine and
 
                     </div>
                 </div>
+
                 <div></div>
                 <div></div>
                 <div></div>
@@ -155,10 +162,12 @@ In her article, Ada expounded on the potential uses of the Analytical Engine and
                 <div></div>
 
                 <div id="2043730" class="grid-item">ADA 1980/81</div>
+
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
+
                 <div id="2433040" class="grid-item">PASCAL 1970</div>
 
                 <div></div>
@@ -257,6 +266,7 @@ In her article, Ada expounded on the potential uses of the Analytical Engine and
 
                     </div>
                 </div>
+
                 <div></div>
                 <div></div>
                 <div></div>
@@ -264,7 +274,6 @@ In her article, Ada expounded on the potential uses of the Analytical Engine and
 
 
                 <div id="24040" class="grid-item">Haskell 1990</div>
-
 
                 <div></div>
                 <div></div>
@@ -286,8 +295,39 @@ In her article, Ada expounded on the potential uses of the Analytical Engine and
                 <div></div>
 
             </div>
+
         </article>
     </section>
 
 
 </main>
+
+<!--Ada Lovelace-->
+<div id="adaLovelace_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p> Ada s childhood lacked fairy tales and princesses, even though her father was the famed Lord Byron. Instead, her mother raised her on science. Ada Lovelace immediately gravitated towards machines and obsessed over the inventions of the Industrial Revolution. At age 12, Ada envisioned a flying machine with the form of a horse with a steam engine in the inside so contrived as to move an immense pair of wings. Introduced by her mentor to Charles Babbage, at age seventeen Ada Lovelace became interested in the Analytical Engine, the invention the Mathematics professor was working on.
+            Expanding on her interest of the machine, Ada Lovelace translated an article written by an Italian mathematician describing the computer-like machine. Impressed with her work, Charles Babbage asked Ada to expand on the article and this is where Ada made history.
+            In her article, Ada expounded on the potential uses of the Analytical Engine and wrote several computer programs. She predicted the computers ability to make music and manipulate symbols. With these announcements, Ada can be called a visionary. While Babbage is known as the father of the computer, Ada Lovelace is honoured as the first computer programmer with her lengthy address.  </span>
+        </p>
+    </div>
+
+</div>
+
+<!--Grace Hopper-->
+<div id="graceHopper_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
