@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>Ada s childhood lacked fairy tales and princesses, even though her father was the famed Lord Byron. Instead,
+        her mother raised her on science. Ada Lovelace immediately gravitated towards machines and obsessed over the
+        inventions of the Industrial Revolution. At age 12, Ada envisioned a flying machine with the form of a horse
+        with a steam engine in the inside so contrived as to move an immense pair of wings. Introduced by her mentor to
+        Charles Babbage, at age seventeen Ada Lovelace became interested in the Analytical Engine, the invention the
+        Mathematics professor was working on.
+        Expanding on her interest of the machine, Ada Lovelace translated an article written by an Italian mathematician
+        describing the computer-like machine. Impressed with her work, Charles Babbage asked Ada to expand on the
+        article and this is where Ada made history.
+        <br></br>
+    </body>
+    <button type="button" onclick="load_adalovelace_page_2()">next</button>
+</note>

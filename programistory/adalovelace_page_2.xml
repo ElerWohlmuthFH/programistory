@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>In her article, Ada expounded on the potential uses of the Analytical Engine and wrote several computer
+        programs. She predicted the computers ability to make music and manipulate symbols. With these announcements,
+        Ada can be called a visionary. While Babbage is known as the father of the computer, Ada Lovelace is honoured as
+        the first computer programmer with her lengthy address.
+        <br></br>
+    </body>
+    <button type="button" onclick="load_adalovelace_page_1()">back</button>
+</note>
