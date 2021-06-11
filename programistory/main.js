@@ -12,6 +12,7 @@ function load_adalovelace_page_1() {
     xhttp.send();
 }
 
+
 function load_adalovelace_page_2() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
