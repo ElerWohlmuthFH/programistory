@@ -40,25 +40,37 @@ function load_adalovelace_page_2() {
 //POP-UP BOX:
 
 // Get the box
-var box1 = document.getElementById("adaLovelace_content");
-var box2 = document.getElementById("graceHopper_content");
+let box1 = document.getElementById("adaLovelace_content");
+let box3 = document.getElementById("edithClarke_content");
+let box5 = document.getElementById("eniac_content");
+let box7 = document.getElementById("graceHopper_content");
+
 
 // Get the button that opens the box
-var btn = document.getElementById("adaLovelace");
-var btn2 = document.getElementById("graceHopper");
+let btn1 = document.getElementById("adaLovelace");
+let btn3 = document.getElementById("edith_clarke");
+let btn5 = document.getElementById("eniac_programmers");
+let btn7 = document.getElementById("graceHopper");
 
 
 // Get the <span> element that closes the box
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 
 // When the user clicks the button, open the box
-btn.onclick = function () {
+btn1.onclick = function () {
     box1.style.display = "block";
 }
 
-btn2.onclick = function () {
-    box2.style.display = "block";
+btn3.onclick = function () {
+    box3.style.display = "block";
+}
+
+btn5.onclick = function () {
+    box5.style.display = "block";
+}
+btn7.onclick = function () {
+    box7.style.display = "block";
 }
 
 
@@ -70,11 +82,18 @@ span.onclick = function () {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-    if (event.target == box1) {
+    if (event.target === box1) {
         box1.style.display = "none";
     }
 
-    if (event.target == box2) {
-        box2.style.display = "none";
+    if (event.target === box3) {
+        box3.style.display = "none";
+    }
+
+    if (event.target === box5) {
+        box5.style.display = "none";
+    }
+    if (event.target === box7) {
+        box7.style.display = "none";
     }
 }
