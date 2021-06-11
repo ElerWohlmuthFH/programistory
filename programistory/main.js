@@ -25,7 +25,7 @@ function load_adalovelace_page_2() {
     xhttp.send();
 }
 
-function load_gracehopper_page_1() {
+/*function load_gracehopper_page_1() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
@@ -35,7 +35,7 @@ function load_gracehopper_page_1() {
     };
     xhttp.open("GET", "adalovelace_page_1.xml", true);
     xhttp.send();
-}
+}*/
 
 //POP-UP BOX:
 
