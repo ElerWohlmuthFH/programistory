@@ -200,6 +200,9 @@ btn31.onclick = function () {
 span.onclick = function () {
     box1.style.display = "none";
 }
+span.onclick = function () {
+    box3.style.display = "none";
+}
 
 
 // When the user clicks anywhere outside of the modal, close it
