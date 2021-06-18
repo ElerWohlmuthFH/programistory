@@ -2,7 +2,7 @@
 
 <note>
     <body>
-        <p>Ada s childhood lacked fairy tales and princesses, even though her father was the famed Lord Byron. Instead,
+        <p>Ada's childhood lacked fairy tales and princesses, even though her father was the famed Lord Byron. Instead,
         her mother raised her on science. Ada Lovelace immediately gravitated towards machines and obsessed over the
         inventions of the Industrial Revolution. At age 12, Ada envisioned a flying machine with the form of a horse
         with a steam engine in the inside so contrived as to move an immense pair of wings. Introduced by her mentor to
@@ -14,5 +14,5 @@
 
         <br></br>
     </body>
-    <button type="button" onclick="load_adalovelace_page_2()">next</button>
+    <button type="button" onclick="load_adaLovelace_page_2()">next</button>
 </note>

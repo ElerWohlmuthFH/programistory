@@ -11,5 +11,5 @@
         </a>
         <br></br>
     </body>
-    <button type="button" onclick="load_adalovelace_page_1()">back</button>
+    <button type="button" onclick="load_adaLovelace_page_1()">back</button>
 </note>

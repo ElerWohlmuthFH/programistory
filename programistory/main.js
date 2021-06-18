@@ -1,7 +1,7 @@
 //AJAX - LOAD XML FILES
 
 //functions to load xml files:
-function load_adalovelace_page_1() {
+function load_adaLovelace_page_1() {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
@@ -9,12 +9,12 @@ function load_adalovelace_page_1() {
                 this.responseText;
         }
     };
-    request.open("GET", "adalovelace_page_1.xml", true);
+    request.open("GET", "contentFiles/adalovelace_page_1.xml", true);
     request.send();
 }
 
 
-function load_adalovelace_page_2() {
+function load_adaLovelace_page_2() {
     let request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
@@ -22,7 +22,7 @@ function load_adalovelace_page_2() {
                 this.responseText;
         }
     };
-    request.open("GET", "adalovelace_page_2.xml", true);
+    request.open("GET", "contentFiles/adalovelace_page_2.xml", true);
     request.send();
 }
 
@@ -34,7 +34,7 @@ function load_idaRhodes_page1() {
                 this.responseText;
         }
     };
-    request.open("GET", "idaRhodes_page1.xml", true);
+    request.open("GET", "contentFiles/idaRhodes_page1.xml", true);
     request.send();
 }
 
@@ -46,7 +46,7 @@ function load_idaRhodes_page2() {
                 this.responseText;
         }
     };
-    request.open("GET", "idaRhodes_page2.xml", true);
+    request.open("GET", "contentFiles/idaRhodes_page2.xml", true);
     request.send();
 }
 
@@ -59,7 +59,7 @@ function load_steveShirley_page1() {
                 this.responseText;
         }
     };
-    request.open("GET", "steveShirley_page_1.xml", true);
+    request.open("GET", "contentFiles/steveShirley_page_1.xml", true);
     request.send();
 }
 
@@ -71,7 +71,7 @@ function load_steveShirley_page2() {
                 this.responseText;
         }
     };
-    request.open("GET", "steveShirley_page_2.xml", true);
+    request.open("GET", "contentFiles/steveShirley_page_2.xml", true);
     request.send();
 }
 
@@ -83,7 +83,7 @@ function load_carolShaw_page1() {
                 this.responseText;
         }
     };
-    request.open("GET", "carolShaw_page_1.xml", true);
+    request.open("GET", "contentFiles/carolShaw_page_1.xml", true);
     request.send();
 }
 
@@ -95,7 +95,7 @@ function load_carolShaw_page2() {
                 this.responseText;
         }
     };
-    request.open("GET", "carolShaw_page_2.xml", true);
+    request.open("GET", "contentFiles/carolShaw_page_2.xml", true);
     request.send();
 }
 
