@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>
+        <p>
+        Ida Rhodes was born Hadassah Itzkowitz in a Jewish Village in Ukraine.
+        In 1913, her parents brought her to the United States where she would later attend Cornell and Columbia University.
+        Ida was known to race with a group of friends to make Einstein’s informal lectures at Princeton.
+        As part of the New Deal program created by President Roosevelt, the Mathematical Tables Project was created and Ida Rhodes was taken onboard.
+        She was placed as a planner and supervisor of the Handbook of Mathematical Functions.</p>
+        <br></br>
+    </body>
+    <button type="button" onclick="load_idaRhodes_page2()">next</button>
+</note>

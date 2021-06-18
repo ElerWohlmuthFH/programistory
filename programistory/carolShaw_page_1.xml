@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>
+        <p>Carol Shaw (1955- ) is a retired video game developer, and was one of the first female video game designers.
+            She was born and raised in Palo Alto, California. Her father was a mechanical engineer,
+            and she preferred playing with her brother’s model railroad set over her own dolls.
+            When her father got laid off, her mother went back to work at the Stanford Library, working in serial records
+            and periodicals. She played arcade games at the miniature golf course, specifically the first commercial arcade game,
+            Computer Space, where she would partner with her brother or a friend to control all the buttons.
+            She first used a computer in high school, and discovered that she could play text-based games on it.
+        </p>
+
+        <br></br>
+    </body>
+    <button type="button" onclick="load_carolShaw_page2()">next</button>
+</note>

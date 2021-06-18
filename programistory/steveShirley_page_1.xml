@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>
+        <p>
+            Dame Stephanie (“Steve”) Shirley founded Freelance Programmers in 1962
+            to offer women who were busy with elder care or child-rearing a means of earning a living,
+            as well as developing professionally as computer programmers. The company was created by a woman for women.
+            Originally a Kindertransport child, Shirley came to the United Kingdom with her sister Renate in July 1939
+            at five years old,
+            “terrified and weeping,” and spent her early years living a serene existence in the English Midlands and
+            then near
+            the Welsh border. She studied mathematics by attending classes at the local boys school, since that subject
+            was not
+            offered at her (girls) school. In the 1950s, after graduating high school,
+            she worked at the Post Office Research Station at Dollis Hill
+            (where World War II code-breaking machines had been built).
+        </p>
+
+        <br></br>
+    </body>
+    <button type="button" onclick="load_steveShirley_page2()">next</button>
+</note>

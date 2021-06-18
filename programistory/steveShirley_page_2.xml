@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>
+        <p>
+            Taking evening classes for six years, she obtained an honors degree in mathematics and married physicist
+            Derek Shirley in 1962.
+            Starting her company at her kitchen table with just a few pounds investment,
+            the company grew quickly and, by 1975, had over 300 programmers, 297 of them women.
+            The company, which had become F International, was floated on the London Stock Exchange
+            (after Shirley had given many shares to her employees) and changed its name to Xansa in 2001.
+            She retired in 1993 and has since been very active in philanthropy via the Shirley Foundation,
+            particularly for charities supporting research into autism and emerging technologies.
+            As well as receiving dozens of honors, Shirley is former president of the British Computer Society
+            and a Fellow of the Royal Academy of Engineering. She has given away most of her wealth to philanthropic
+            causes, including a gift of £10 million to found the Oxford Internet Institute.</p>
+        Source:
+        <a href="https://computerhistory.org/profile/dame-stephanie-shirley/">
+            computerhistory.org
+        </a>
+        <br></br>
+    </body>
+    <button type="button" onclick="load_steveShirley_page1()">back</button>
+</note>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>
+        <p>
+            She first used a computer in high school, and discovered that she could play text-based games on it.
+            She became interested in computers, and graduated from the University of California, Berkeley in 1977
+            with a BS in Electrical Engineering and Computer Science, and a year later received a master’s degree as well,
+            in Computer Science. She was hired by Atari to program games for the new VCS console. While working for Atari in 1978,
+            although her official job title was Microprocessor Software Engineer, she designed Polo (unreleased), 3-D Tic-Tac-Toe,
+            and Video Checkers. She left Atari in 1980 to work for Tandem Computers, but was contacted by Activision just over
+            a year later to join their team: at Activision, she designed Happy Trails, and River Raid, which is universally
+            regarded as a masterpiece of game design for the Atari 2600. She returned to Tandem from 1984-1990 before retiring
+            early, which she credits to the success of River Raid.
+            </p>
+        Source:
+        <a href="https://www.womenartandtechnology.net/blog/2017/4/24/carol-shaw#:~:text=Carol%20Shaw%20(1955%2D%20)%20is,
+        raised%20in%20Palo%20Alto%2C%20California.&text=She%20first%20used%20a%20computer,text%2Dbased%20games%20on%20it.">
+            womenartandtechnology.net
+        </a>
+        <br></br>
+    </body>
+    <button type="button" onclick="load_carolShaw_page1()">back</button>
+</note>

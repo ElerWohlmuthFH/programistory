@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<note>
+    <body>
+        <p>
+        Seven years later, Ida’s boss sent her to Washington to learn about the creation of an electronic computer
+        which would come to change the course of Ida’s life.
+        The people in Washington were so impressed with Ida Rhodes, they wanted to work with her more.
+        She worked in the Machine Development Laboratory consulting with government agencies and in the development
+        of the analysis of systems of programming. Ida designed the C-10 language for the U.S. Census Bureau and
+        created the original programming for the Social Security Administrations.
+        Ida was also a pioneer in the use of computers to support language translation.
+        Ida Rhodes was awarded the Exceptional Service Gold Medal and Certificate of Appreciation
+        from the Department of Commerce and a UNIVAC I Pioneer Award from AFIPS National Computer Conference.</p>
+        Source:
+        <a href="https://eklektika.pl/blog/7-famous-female-programmers-you-probably-havent-heard-of/">
+            7 Famous female programmers you probably haven’t heard of - Eklektika
+        </a>
+        <br></br>
+    </body>
+    <button type="button" onclick="load_idaRhodes_page1()">back</button>
+</note>
