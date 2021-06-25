@@ -196,65 +196,48 @@ btn31.onclick = function () {
 }
 
 
-// When the user clicks on <span> (x), close the box
-span.onclick = function () {
-    box1.style.display = "none";
-}
-span.onclick = function () {
-    box3.style.display = "none";
-}
+// // When the user clicks on <span> (x), close the box
+// span.onclick = function () {
+//     box1.style.display = "none";
+// }
+// span.onclick = function () {
+//     box3.style.display = "none";
+// }
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target === box1) {
         box1.style.display = "none";
-    }
-
-    if (event.target === box3) {
+    } else if (event.target === box3) {
         box3.style.display = "none";
-    }
-
-    if (event.target === box5) {
+    } else if (event.target === box5) {
         box5.style.display = "none";
-    }
-    if (event.target === box7) {
+    } else if (event.target === box7) {
         box7.style.display = "none";
-    }
-    if (event.target === box9) {
+    } else if (event.target === box9) {
         box9.style.display = "none";
-    }
-    if (event.target === box11) {
+    } else if (event.target === box11) {
         box11.style.display = "none";
-    }
-    if (event.target === box13) {
+    } else if (event.target === box13) {
         box13.style.display = "none";
-    }
-    if (event.target === box15) {
+    } else if (event.target === box15) {
         box15.style.display = "none";
-    }
-    if (event.target === box17) {
+    } else if (event.target === box17) {
         box17.style.display = "none";
-    }
-    if (event.target === box19) {
+    } else if (event.target === box19) {
         box19.style.display = "none";
-    }
-    if (event.target === box21) {
+    } else if (event.target === box21) {
         box21.style.display = "none";
-    }
-    if (event.target === box23) {
+    } else if (event.target === box23) {
         box23.style.display = "none";
-    }
-    if (event.target === box25) {
+    } else if (event.target === box25) {
         box25.style.display = "none";
-    }
-    if (event.target === box27) {
+    } else if (event.target === box27) {
         box27.style.display = "none";
-    }
-    if (event.target === box29) {
+    } else if (event.target === box29) {
         box29.style.display = "none";
-    }
-    if (event.target === box31) {
+    } else if (event.target === box31) {
         box31.style.display = "none";
     }
 }
