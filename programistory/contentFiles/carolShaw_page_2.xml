@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>
             She first used a computer in high school, and discovered that she could play text-based games on it.

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>
         Ida Rhodes was born Hadassah Itzkowitz in a Jewish Village in Ukraine.

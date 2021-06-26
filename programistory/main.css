@@ -75,7 +75,7 @@ ul li a:hover::before {
 .tooltip .toolTipTextLeft {
     display: none;
     visibility: hidden;
-    width: 350%;
+    width: 100%;
     background-color: white;
     color: black;
     text-align: justify;
@@ -86,6 +86,7 @@ ul li a:hover::before {
     z-index: 1;
     right: 50%;
     /* display: block; */
+
 }
 .tooltip:hover .toolTipTextLeft {
     visibility: visible;
@@ -98,7 +99,7 @@ ul li a:hover::before {
 
 .tooltip .toolTipText {
     visibility: hidden;
-    width: 350%;
+    width: 100%;
     background-color: white;
     color: black;
     text-align: justify;
@@ -107,6 +108,7 @@ ul li a:hover::before {
     position: absolute;
     z-index: 1;
     display: block;
+
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -177,6 +179,7 @@ body {
     top: 0;
     width: 100%;
     height: 100vh;
+    z-index: -1;
 }
 
 .image-container img {
@@ -258,6 +261,9 @@ body {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+   max-height: 70%;
+    overflow-y: auto;
+
 }
 
 /* The Close Button */

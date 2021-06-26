@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>
         Seven years later, Ida’s boss sent her to Washington to learn about the creation of an electronic computer

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>
             Dame Stephanie (“Steve”) Shirley founded Freelance Programmers in 1962

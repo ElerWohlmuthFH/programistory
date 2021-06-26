@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>
             Taking evening classes for six years, she obtained an honors degree in mathematics and married physicist

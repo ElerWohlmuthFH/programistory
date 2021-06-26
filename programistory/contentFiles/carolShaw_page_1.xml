@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>Carol Shaw (1955- ) is a retired video game developer, and was one of the first female video game designers.
             She was born and raised in Palo Alto, California. Her father was a mechanical engineer,

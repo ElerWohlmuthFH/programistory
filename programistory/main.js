@@ -100,6 +100,15 @@ function load_carolShaw_page2() {
 }
 
 //POP-UP BOX:
+function closeModal() {
+
+    let modals = document.getElementsByClassName("modal");
+    for(let i = 0; i < modals.length; i++) {
+        let element = modals[i];
+        element.style.display = "none";
+
+    }
+}
 
 // Get the box
 let box1 = document.getElementById("adaLovelace_content");

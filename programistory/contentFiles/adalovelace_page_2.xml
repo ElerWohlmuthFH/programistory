@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <note>
+    <span class="close" onclick="closeModal();">&times;</span>
     <body>
         <p>In her article, Ada expounded on the potential uses of the Analytical Engine and wrote several computer
         programs. She predicted the computers ability to make music and manipulate symbols. With these announcements,
