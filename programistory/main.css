@@ -22,7 +22,14 @@ nav{
     width: 200px;right:10px;
     position: fixed;
     z-index: 1;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* hide scrollbar: IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+nav::-webkit-scrollbar{
+    display: none; /* Chrome, Safari & Opera */
 }
 @media only screen and (max-width: 768px) {
     nav{
