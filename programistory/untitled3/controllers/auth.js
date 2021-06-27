@@ -13,8 +13,6 @@ exports.login = async (req, res) => {
     try{
         const {email, password} = req.body;
 
-        console.log(req.body)
-
         if(!email || !password){
             return res.status(400).send(JSON.stringify({
                 loggedin: false,
@@ -84,6 +82,15 @@ exports.register = (req,res) => {
          const password = req.body.password;
          const passwordConfirm = req.body.passwordConfirm;*/
 
+    if(!name || !email || !password){
+
+        return res.render('register', {
+            alertType: 'danger',
+            message: 'Provide name, email and password!',
+            name: name,
+            email: email
+        })
+    }
     db.query('SELECT email FROM users WHERE email = ?', [email],async (error, results) => {
         if (error) {
             console.log(error);
