@@ -1,5 +1,4 @@
 //AJAX - LOAD XML FILES
-
 //functions to load xml files:
 function load_adaLovelace_page_1() {
     let request = new XMLHttpRequest();

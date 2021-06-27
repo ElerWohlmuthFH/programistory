@@ -13,17 +13,34 @@ exports.login = async (req, res) => {
     try{
         const {email, password} = req.body;
 
+        console.log(req.body)
+
         if(!email || !password){
+            return res.status(400).send(JSON.stringify({
+                loggedin: false,
+                message: 'Please provide an email and password'
+            }))
+
+            /*
             return res.status(400).render('login', {
                 message: 'Please provide an email and password'
-            })
+            })*/
         }
         db.query('SELECT * FROM users WHERE email = ?' , [email], async (error,results) =>{
         console.log(results);
             if(!results || results.length == 0 || !(await bcrypt.compare(password, results[0].password))){
+                /*
                 res.status(401).render('login', {
                     message: 'Incorrect Email or Password'
                 })
+                */
+
+                return res.status(400).send(JSON.stringify({
+                    loggedin: false,
+                    message: 'Incorrect Email or Password'
+                }))
+
+
             } else {
                 const id = results[0].id;
                 const token = jwt.sign({id}, process.env.JWT_SECRET, {
@@ -46,7 +63,9 @@ exports.login = async (req, res) => {
                     httpOnly: true
                 }
                 res.cookie('jwt', token, cookieOptions );
-                res.status(200).redirect("/");
+
+                res.status(200).send(JSON.stringify(req.session))
+                //res.status(200).redirect("/");
             }
         })
 

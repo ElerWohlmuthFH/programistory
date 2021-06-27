@@ -3,7 +3,6 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
 
-
     if(req.session.loggedin == true) {
         res.render('index', {
             loggedin: true,
