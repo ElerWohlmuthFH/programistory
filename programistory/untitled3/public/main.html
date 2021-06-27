@@ -7,11 +7,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
-    <style>
-
-    </style>
     <title>Programistory</title>
 </head>
 
@@ -46,15 +41,15 @@
     </ul>
 </nav>
 
-<body>
 
 <main>
 
     <section class="section">
+        <h2>Programistory</h2>
         <figure class="image-container"><img src="Images/backround.jpg" alt="Background"/></figure>
         <article class="content">
-
-            <a href="/">Back to Home</a>
+            <h2><a href="/">Back to Home</a></h2>
+            <h3>19-20th Century</h3>
 
 
             <div class="grid-container">
@@ -72,9 +67,9 @@
                 <div></div>
 
                 <!-- grid 2-->
-              <button id="plankakuel" class="grid-item">
-                  Plankalkuel
-              </button>
+                <button id="plankakuel" class="grid-item">
+                    Plankalkuel
+                </button>
 
 
                 <div></div>
@@ -97,11 +92,11 @@
                 </button>
 
 
-
                 <div></div>
                 <div></div>
                 <!--grid 5    1943-->
-                <button id="eniac_programmers" class="grid-item" style="background-image: url('/womenInTech/eniac.jpg')">
+                <button id="eniac_programmers" class="grid-item"
+                        style="background-image: url('/womenInTech/eniac.jpg')">
                     The ENIAC programmers
                 </button>
 
@@ -307,7 +302,7 @@
 
 
                 <!--grid 27   1985-->
-                <button id="radia" class="grid-item"  style="background-image:
+                <button id="radia" class="grid-item" style="background-image:
                 url('/womenInTech/radia.jpg')">
                     Radia Perlman (1958 - )
                 </button>
@@ -361,42 +356,19 @@
                 </button>
 
 
-
             </div>
         </article>
     </section>
 
     <section class="section">
+        <h2>Section 2</h2>
+
         <figure class="image-container"><img src="Images/backround2.jpg" alt="backgroundImg"/></figure>
         <article class="content">
-
-            <h1>21. Century</h1>
+            <h3>21. Century</h3>
             <div class="grid-container">
 
-                <div id="20410" class="grid-item">
-                    <div class="tooltip">C++ 1983
-                        <span class="toolTipText">Mathematician Grace Hopper completes A-0,
-                            a program that allows a computer user to use English-like words instead of numbers
-                            to give the computer instructions. It possessed several features of a modern-day compiler
-                            and was written for the UNIVAC I computer, the first commercial business computer system in
-                            the United States.</span>
-                    </div>
-                </div>
-
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-
-                <div id="20420" class="grid-item" style="background-image: url('/Images/backround.jpg'); ">
-                    <div class="tooltip"> Objective-C 1983
-                        <span class="toolTipText"> Bezeichnend ist, dass ihr wissenschaftlicher Beitrag zu
-                            ihren Lebzeiten kaum Anerkennung fand. Erst Mitte des 20. Jahrhunderts, mit Beginn des
-                            Computerzeitalters, wurde die Bedeutung ihrer Schriften erkannt. Heutzutage ist sie weltberühmt,
-                            nicht zuletzt, weil in den 1970er-Jahren die Computersprache ADA nach ihr benannt wurde.
-                            Aufgrund ihrer Leistungen wird sie zu Recht als Pionierin der modernen Informatik bezeichnet.  </span>
-                    </div>
-                </div>
+                <button id="20410" class="grid-item">C++ 1983</button>
 
                 <div></div>
                 <div></div>
@@ -404,36 +376,36 @@
                 <div></div>
 
 
-                <div id="24030" class="grid-item">
-                    <div class="tooltip"> Perl 1987
-                        <span class="toolTipTextLeft"> Eler Wohlmuth wird seiner Zeit der beste Programmierer
-                            auf der Welt sein. Ich würde auch gerns so viel können wie er.</span>
-
-                    </div>
-                </div>
+                <button id="20420" class="grid-item">Objective-C 1983</button>
 
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
 
+                <button id="24030" class="grid-item">Perl 1987</button>
 
-                <div id="24040" class="grid-item">Haskell 1990</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+
+                <button id="24040" class="grid-item">Haskell 1990</button>
 
                 <div></div>
                 <div></div>
 
-                <div id="20450" class="grid-item">Python 1991</div>
+                <button id="20450" class="grid-item">Python 1991</button>
 
                 <div></div>
                 <div></div>
 
-                <div id="20460" class="grid-item">Visual Basic 1991</div>
+                <button id="20460" class="grid-item">Visual Basic 1991</button>
 
                 <div></div>
                 <div></div>
 
-                <div id="20470" class="grid-item">Ruby 1993</div>
+                <button id="20470" class="grid-item">Ruby 1993</button>
 
                 <div></div>
                 <div></div>
@@ -449,7 +421,6 @@
 
 <!--Ada Lovelace-->
 <div id="adaLovelace_content" class="modal">
-
 
 
     <!-- Modal content -->
@@ -481,8 +452,16 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>Plankakül
-            The world’s first complete high-level language was designed in 1940s (probably between 1941 and 1945, but the concept first published in 1948), by the german computer pioneer Konrad Zuse, the creator of the first relay computer
-            From 1941-1946 (at the same time he developed his Z4 computer), Konrad Zuse developed ideas as to how his machines could be programmed in a very powerful way. The language Plankalkül was initially described in Zuse’s planned Ph.D. dissertation in 1943, later developed in his 1945 (also unpublished, it was still wartime) work "Plankalkül. Theorie del angewandten Logistik.", and finally reached the public in a 1948 article (but still did not attract much feedback and for a long time to come programming a computer would only be thought of as programming with machine code). Plankalkül was eventually more comprehensively published in a 1972 paper, while the first compiler for it was implemented as late as in 1998.
+            The world’s first complete high-level language was designed in 1940s (probably between 1941 and 1945, but
+            the concept first published in 1948), by the german computer pioneer Konrad Zuse, the creator of the first
+            relay computer
+            From 1941-1946 (at the same time he developed his Z4 computer), Konrad Zuse developed ideas as to how his
+            machines could be programmed in a very powerful way. The language Plankalkül was initially described in
+            Zuse’s planned Ph.D. dissertation in 1943, later developed in his 1945 (also unpublished, it was still
+            wartime) work "Plankalkül. Theorie del angewandten Logistik.", and finally reached the public in a 1948
+            article (but still did not attract much feedback and for a long time to come programming a computer would
+            only be thought of as programming with machine code). Plankalkül was eventually more comprehensively
+            published in a 1972 paper, while the first compiler for it was implemented as late as in 1998.
 
             <a href="https://history-computer.com/plankalkul-complete-history-of-the-plankalkul-programming-language/">
 
@@ -521,7 +500,9 @@
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
-        <p>Assembly language was used in the Electronic Delay Storage Automatic Calculator (EDSAC). Assembly language was a type of low-level programming language that simplified the language of machine code. In other words, the specific instructions necessary to operate a computer.
+        <p>Assembly language was used in the Electronic Delay Storage Automatic Calculator (EDSAC). Assembly language
+            was a type of low-level programming language that simplified the language of machine code. In other words,
+            the specific instructions necessary to operate a computer.
             Source:
             <a href="https://devskiller.com/history-of-programming-languages/">
             </a></p>
@@ -569,7 +550,9 @@
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
-        <p>In 1952 British computer scientist Alick Glennie  developed the first autocode , or programming language, for the Manchester Mark 1  computer at the University of Manchester. This was the first compiled programming language.
+        <p>In 1952 British computer scientist Alick Glennie developed the first autocode , or programming language, for
+            the Manchester Mark 1 computer at the University of Manchester. This was the first compiled programming
+            language.
             <a href="https://www.historyofinformation.com/detail.php?id=3904">
             </a></p>
     </div>
@@ -608,7 +591,13 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>ALGOL 1958
-            ALGOL, computer programming language designed by an international committee of the Association of Computing Machinery (ACM), led by Alan J. Perlis of Carnegie Mellon University, during 1958–60 for publishing algorithms, as well as for doing computations. Like LISP, ALGOL had recursive subprograms—procedures that could invoke themselves to solve a problem by reducing it to a smaller problem of the same kind. ALGOL introduced block structure, in which a program is composed of blocks that might contain both data and instructions and have the same structure as an entire program. Block structure became a powerful tool for building large programs out of small components.
+            ALGOL, computer programming language designed by an international committee of the Association of Computing
+            Machinery (ACM), led by Alan J. Perlis of Carnegie Mellon University, during 1958–60 for publishing
+            algorithms, as well as for doing computations. Like LISP, ALGOL had recursive subprograms—procedures that
+            could invoke themselves to solve a problem by reducing it to a smaller problem of the same kind. ALGOL
+            introduced block structure, in which a program is composed of blocks that might contain both data and
+            instructions and have the same structure as an entire program. Block structure became a powerful tool for
+            building large programs out of small components.
             <a href="https://www.britannica.com/technology/ALGOL-computer-language">
             </a></p>
     </div>
@@ -643,7 +632,10 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p> C
-            C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
+            C programming is a general-purpose, procedural, imperative computer programming language developed in 1972
+            by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most
+            widely used computer language. It keeps fluctuating at number one scale of popularity along with Java
+            programming language, which is also equally popular and most widely used among modern software programmers.
             <a href="https://www.britannica.com/technology/ALGOL-computer-language">
             </a></p>
     </div>
@@ -669,10 +661,10 @@
             while still working full time. An advocate for equality in the workplace,
             she later took on the role of equal employment opportunity counsellor at NASA
             and helped supervisors address issues of gender, race and age discrimination.
-        Source:
-        <a href="https://blog.hatchcoding.com/women-who-code-meet-historys-greatest-female-programmers">
-            Women Who Code: Meet History's Greatest Female Programmers
-        </a></p>
+            Source:
+            <a href="https://blog.hatchcoding.com/women-who-code-meet-historys-greatest-female-programmers">
+                Women Who Code: Meet History's Greatest Female Programmers
+            </a></p>
 
     </div>
 </div>
@@ -683,7 +675,12 @@
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
-        <p>Ada is a modern programming language designed for large, long-lived applications – and embedded systems in particular – where reliability and efficiency are essential. It was originally developed in the early 1980s (this version is generally known as Ada 83) by a team led by Dr. Jean Ichbiah at CII-Honeywell-Bull in France. The language was revised and enhanced in an upward compatible fashion in the early 1990s, under the leadership of Mr. Tucker Taft from Intermetrics in the U.S. The resulting language, Ada 95, was the first internationally standardized (ISO) Object-Oriented Language.
+        <p>Ada is a modern programming language designed for large, long-lived applications – and embedded systems in
+            particular – where reliability and efficiency are essential. It was originally developed in the early 1980s
+            (this version is generally known as Ada 83) by a team led by Dr. Jean Ichbiah at CII-Honeywell-Bull in
+            France. The language was revised and enhanced in an upward compatible fashion in the early 1990s, under the
+            leadership of Mr. Tucker Taft from Intermetrics in the U.S. The resulting language, Ada 95, was the first
+            internationally standardized (ISO) Object-Oriented Language.
             Source:
             <a href="https://www.adaic.org/advantages/ada-overview/">
             </a></p>
@@ -719,8 +716,11 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>C++
-            C++ is a general-purpose programming language that was developed as an enhancement of the C language to include object-oriented paradigm. It is an imperative and a compiled language.
-            C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same.
+            C++ is a general-purpose programming language that was developed as an enhancement of the C language to
+            include object-oriented paradigm. It is an imperative and a compiled language.
+            C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and
+            even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both
+            C and C++ are the same.
             <a href="https://www.geeksforgeeks.org/introduction-to-c-programming-language/">
             </a></p>
     </div>
@@ -733,16 +733,20 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>Perl
-            Perl is a general-purpose programming language originally developed for text manipulation and now used for a wide range of tasks including system administration, web development, network programming, GUI development, and more.
+            Perl is a general-purpose programming language originally developed for text manipulation and now used for a
+            wide range of tasks including system administration, web development, network programming, GUI development,
+            and more.
             What is Perl?
-            •	Perl is a stable, cross platform programming language.<br>
-            •	Though Perl is not officially an acronym but few people used it as Practical Extraction and Report Language.<br>
-            •	It is used for mission critical projects in the public and private sectors.<br>
-            •	Perl is an Open Source software, licensed under its Artistic License, or the GNU General Public License (GPL).<br>
-            •	Perl was created by Larry Wall.<br>
-            •	Perl 1.0 was released to usenet's alt.comp.sources in 1987.<br>
-            •	At the time of writing this tutorial, the latest version of perl was 5.16.2.<br>
-            •	Perl is listed in the Oxford English Dictionary.
+            • Perl is a stable, cross platform programming language.<br>
+            • Though Perl is not officially an acronym but few people used it as Practical Extraction and Report
+            Language.<br>
+            • It is used for mission critical projects in the public and private sectors.<br>
+            • Perl is an Open Source software, licensed under its Artistic License, or the GNU General Public License
+            (GPL).<br>
+            • Perl was created by Larry Wall.<br>
+            • Perl 1.0 was released to usenet's alt.comp.sources in 1987.<br>
+            • At the time of writing this tutorial, the latest version of perl was 5.16.2.<br>
+            • Perl is listed in the Oxford English Dictionary.
 
             <a href="https://www.tutorialspoint.com/perl/perl_introduction.htm">
             </a></p>
@@ -829,7 +833,9 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>
-            Python is a powerful general-purpose programming language. It is used in web development, data science, creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax. This makes Python an excellent language to learn to program for beginners.
+            Python is a powerful general-purpose programming language. It is used in web development, data science,
+            creating software prototypes, and so on. Fortunately for beginners, Python has simple easy-to-use syntax.
+            This makes Python an excellent language to learn to program for beginners.
             <a href="https://www.programiz.com/python-programming">
             </a></p>
     </div>
@@ -873,7 +879,10 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>
-            Visual Basic (or VB) is a programming language developed by Microsoft that runs on the .Net Framework. With Visual Basic you can build Windows applications, web applications and Windows phone applications. Programs developed in Visual Basic will only run on a Windows Operating System. Visual Basic is easy to learn, fun and powerful!
+            Visual Basic (or VB) is a programming language developed by Microsoft that runs on the .Net Framework. With
+            Visual Basic you can build Windows applications, web applications and Windows phone applications. Programs
+            developed in Visual Basic will only run on a Windows Operating System. Visual Basic is easy to learn, fun
+            and powerful!
             <a href="https://www.thecodingguys.net/tutorials/visualbasic/vb-tutorial">
             </a></p>
     </div>
@@ -886,7 +895,10 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>
-            Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby is a pure Object-Oriented language developed by Yukihiro Matsumoto. Everything in Ruby is an object except the blocks but there are replacements too for it i.e procs and lambda. The objective of Ruby’s development was to make it act as a sensible buffer between human programmers and the underlying computing machinery.
+            Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. Ruby is a pure
+            Object-Oriented language developed by Yukihiro Matsumoto. Everything in Ruby is an object except the blocks
+            but there are replacements too for it i.e procs and lambda. The objective of Ruby’s development was to make
+            it act as a sensible buffer between human programmers and the underlying computing machinery.
             <a href="https://www.geeksforgeeks.org/ruby-programming-language/">
             </a></p>
     </div>
@@ -915,10 +927,8 @@
             go
             on to be the most commonly used in software design.<br>
             Read more at:<br>
-            <a href="https://www.witi.com/halloffame/100883/Adele-Goldberg-Founding-Chairman-ParcPlace-Systems,
-            -Inc/#:~:text=Adele%20Goldberg%20is%20a%20computer,internet%20support%20provider%20she%20founded./">
-                witi.com/halloffame
-            </a></p>
+
+        </p>
 
     </div>
 </div>
@@ -959,11 +969,24 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>
-            JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.).  There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
-            JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:<br>
-            •	Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.<br>
-            •	Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
-            This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise, Node.js JavaScript on the server can respond to custom requests from code written in the browser.
+            JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g.,
+            having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side
+            versions of JavaScript such as Node.js, which allow you to add more functionality to a website than
+            downloading files (such as realtime collaboration between multiple computers). Inside a host environment
+            (for example, a web browser), JavaScript can be connected to the objects of its environment to provide
+            programmatic control over them.
+            JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language
+            elements such as operators, control structures, and statements. Core JavaScript can be extended for a
+            variety of purposes by supplementing it with additional objects; for example:<br>
+            • Client-side JavaScript extends the core language by supplying objects to control a browser and its
+            Document Object Model (DOM). For example, client-side extensions allow an application to place elements on
+            an HTML form and respond to user events such as mouse clicks, form input, and page navigation.<br>
+            • Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a
+            server. For example, server-side extensions allow an application to communicate with a database, provide
+            continuity of information from one invocation to another of the application, or perform file manipulations
+            on a server.
+            This means that in the browser, JavaScript can change the way the webpage (DOM) looks. And, likewise,
+            Node.js JavaScript on the server can respond to custom requests from code written in the browser.
 
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction">
             </a></p>
@@ -1035,7 +1058,11 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
         <p>
-            C# is a modern, general-purpose programming language that can be used to perform a wide range of tasks and objectives that span over a variety of professions. C# is primarily used on the Windows .NET framework, although it can be applied to an open source platform. This highly versatile programming language is an object-oriented programming language (OOP)—which isn’t very common—and fairly new to the game, yet already a reliable crowd pleaser.
+            C# is a modern, general-purpose programming language that can be used to perform a wide range of tasks and
+            objectives that span over a variety of professions. C# is primarily used on the Windows .NET framework,
+            although it can be applied to an open source platform. This highly versatile programming language is an
+            object-oriented programming language (OOP)—which isn’t very common—and fairly new to the game, yet already a
+            reliable crowd pleaser.
             <a href="https://www.pluralsight.com/blog/software-development/everything-you-need-to-know-about-c-">
             </a></p>
     </div>
@@ -1077,10 +1104,16 @@
     <!-- Modal content -->
     <div class="modal-content">
         <span class="close" onclick="closeModal();">&times;</span>
-        <p>Go (also called Golang or Go language) is an open source programming language used for general purpose. Go was developed by Google engineers to create dependable and efficient software. Most similarly modeled after C, Go is statically typed and explicit.
-            The language was designed by taking inspiration for the productivity and relative simplicity of Python, with the ability of C. Some of the problems that Go addresses are slow build time, uncontrolled dependencies, effort duplication, difficulty of writing automatic tools and cross-language development.
-            Go works by using "goroutines," or lightweight processes, which allows further efficiencies. Go also uses a collection of packages for efficient dependency management.
-            Some examples of organizations that use Go include Google, Cloudflare, Dropbox, MongoDB, Netflix, SoundCloud, Twitch and Uber.
+        <p>Go (also called Golang or Go language) is an open source programming language used for general purpose. Go
+            was developed by Google engineers to create dependable and efficient software. Most similarly modeled after
+            C, Go is statically typed and explicit.
+            The language was designed by taking inspiration for the productivity and relative simplicity of Python, with
+            the ability of C. Some of the problems that Go addresses are slow build time, uncontrolled dependencies,
+            effort duplication, difficulty of writing automatic tools and cross-language development.
+            Go works by using "goroutines," or lightweight processes, which allows further efficiencies. Go also uses a
+            collection of packages for efficient dependency management.
+            Some examples of organizations that use Go include Google, Cloudflare, Dropbox, MongoDB, Netflix,
+            SoundCloud, Twitch and Uber.
 
             <a href="https://searchitoperations.techtarget.com/definition/Go-programming-language">
             </a></p>
@@ -1125,8 +1158,15 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close" onclick="closeModal();">&times;</span>
-            <p>Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and functional programming features. It is focused on interoperability, safety, clarity, and tooling support. Versions of Kotlin targeting JavaScript ES5.1 and native code (using LLVM) for a number of processors are in production as well.
-                Kotlin originated at JetBrains, the company behind IntelliJ IDEA, in 2010, and has been open source since 2012. The Kotlin team currently has more than 90 full-time members from JetBrains, and the Kotlin project on GitHub has more than 300 contributors. JetBrains uses Kotlin in many of its products including its flagship IntelliJ IDEA.
+            <p>Kotlin is a general purpose, free, open source, statically typed “pragmatic” programming language
+                initially designed for the JVM (Java Virtual Machine) and Android that combines object-oriented and
+                functional programming features. It is focused on interoperability, safety, clarity, and tooling
+                support. Versions of Kotlin targeting JavaScript ES5.1 and native code (using LLVM) for a number of
+                processors are in production as well.
+                Kotlin originated at JetBrains, the company behind IntelliJ IDEA, in 2010, and has been open source
+                since 2012. The Kotlin team currently has more than 90 full-time members from JetBrains, and the Kotlin
+                project on GitHub has more than 300 contributors. JetBrains uses Kotlin in many of its products
+                including its flagship IntelliJ IDEA.
 
                 <a href="https://www.infoworld.com/article/3224868/what-is-kotlin-the-java-alternative-explained.html">
                 </a></p>
@@ -1135,7 +1175,7 @@
 </div>
 
 
-<script type="text/javascript" src="main.js"></script>
+<script src="main.js"></script>
 
-</body>
+
 </html>
