@@ -3,8 +3,6 @@
 *
 {
     scroll-behavior: smooth;
-    font-family: Segoe UI, serif;
-    font-weight: lighter;
 }
 
 header {
@@ -203,8 +201,8 @@ body {
 }
 
 
-/* The box (background) */
-.box {
+/* The Modal (background) */
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -218,8 +216,8 @@ body {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* box Content */
-.box-content {
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
     color: black;
     margin: auto;

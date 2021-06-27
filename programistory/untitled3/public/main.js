@@ -102,8 +102,8 @@ function load_carolShaw_page2() {
 //POP-UP BOX:
 function closeModal() {
 
-    let modals = document.getElementsByClassName("box");
-    for (let i = 0; i < modals.length; i++) {
+    let modals = document.getElementsByClassName("modal");
+    for(let i = 0; i < modals.length; i++) {
         let element = modals[i];
         element.style.display = "none";
 
@@ -287,7 +287,16 @@ btn32.onclick = function () {
 }
 
 
-// When the user clicks anywhere outside of the box, close it
+// // When the user clicks on <span> (x), close the box
+// span.onclick = function () {
+//     box1.style.display = "none";
+// }
+// span.onclick = function () {
+//     box3.style.display = "none";
+// }
+
+
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
     if (event.target === box1) {
         box1.style.display = "none";
@@ -325,8 +334,6 @@ window.onclick = function (event) {
         box17.style.display = "none";
     } else if (event.target === box18) {
         box18.style.display = "none";
-    } else if (event.target === box19) {
-        box19.style.display = "none";
     } else if (event.target === box19) {
         box20.style.display = "none";
     } else if (event.target === box20) {

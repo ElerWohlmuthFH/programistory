@@ -53,6 +53,7 @@ exports.login = async (req, res) => {
     }catch(error){
         console.log(error);
     }
+
 }
 exports.register = (req,res) => {
     console.log(req.body);
