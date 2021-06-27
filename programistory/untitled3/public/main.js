@@ -103,7 +103,7 @@ function load_carolShaw_page2() {
 function closeModal() {
 
     let modals = document.getElementsByClassName("box");
-    for(let i = 0; i < modals.length; i++) {
+    for (let i = 0; i < modals.length; i++) {
         let element = modals[i];
         element.style.display = "none";
 
@@ -335,6 +335,8 @@ window.onclick = function (event) {
     } else if (event.target === box18) {
         box18.style.display = "none";
     } else if (event.target === box19) {
+        box19.style.display = "none";
+    } else if (event.target === box20) {
         box20.style.display = "none";
     } else if (event.target === box20) {
         box22.style.display = "none";
