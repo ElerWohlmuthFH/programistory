@@ -1,5 +1,11 @@
+/*Bootstrap login menu*/
+
+body{
+    background-color: wheat;
+}
+
 nav{
-    background-color: #000033;
+    background-image:  url("Images/backround.jpg");
     color: #fff;
     padding: 30px 60px;
     display: flex;

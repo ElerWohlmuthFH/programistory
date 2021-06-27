@@ -102,7 +102,7 @@ function load_carolShaw_page2() {
 //POP-UP BOX:
 function closeModal() {
 
-    let modals = document.getElementsByClassName("modal");
+    let modals = document.getElementsByClassName("box");
     for(let i = 0; i < modals.length; i++) {
         let element = modals[i];
         element.style.display = "none";
