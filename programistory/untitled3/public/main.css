@@ -25,7 +25,7 @@ nav{
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;  /* hide scrollbar: IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+   /* scrollbar-width: none;  /* Firefox */
 
 }
 nav::-webkit-scrollbar{
