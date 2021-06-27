@@ -4,7 +4,11 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
     <style>
 
     </style>
@@ -18,7 +22,7 @@
 </header>
 
 <nav>
-    <img id="logo" src="Images/programistory.png">
+    <img id="logo" src="/Images/programistory.png">
     <h2> Timeline </h2>
     <ul>
         <li><a href="#adaLovelace"> 1894</a></li>
@@ -46,16 +50,17 @@
 <main>
 
     <section class="section">
-        <figure class="image-container"><img src="Images/backround.jpg" alt="Background"/></figure>
+        <figure class="image-container"><img src="/Images/backround.jpg" alt="Background"/></figure>
         <article class="content">
-            <h1>19-20th Century</h1>
+
+            <a href="/">Back to Home</a>
 
 
             <div class="grid-container">
 
                 <!-- grid 1   1894-->
                 <button id="adaLovelace" class="grid-item"
-                        style="background-image: url('womenInTech/ada.jpg'); ">
+                        style="background-image: url('/womenInTech/ada.jpg'); ">
                     <div> Ada Lovelace (1815-1852) 1843</div>
                 </button>
 
@@ -66,13 +71,10 @@
                 <div></div>
 
                 <!-- grid 2-->
-                <div class="grid-item">
-                    <div class="tooltip"> Plankalkuel 1944-1945
-                        <span class="toolTipText"> Konrad Zuse, who built the first fully automatic,
-                            program controlled computer, developed the first "real" programming language
-                            called Plankalkuel.</span>
-                    </div>
-                </div>
+              <button id="plankakuel" class="grid-item">
+                      <div> Plankalkuel </div>
+              </button>
+
 
                 <div></div>
                 <div></div>
@@ -80,7 +82,7 @@
                 <div></div>
 
                 <!-- grid 3    1921-->
-                <button id="edith_clarke" class="grid-item" style="background-image: url('womenInTech/edith.jpg')">
+                <button id="edith_clarke" class="grid-item" style="background-image: url('/womenInTech/edith.jpg')">
                     <div>Edith Clarke (1883 – 1959)</div>
                 </button>
 
@@ -89,21 +91,16 @@
                 <div></div>
                 <div></div>
                 <!-- grid 4-->
-                <div id="2040" class="grid-item">
-                    <div class="tooltip"> Assembly Language 1949
-                        <span class="toolTipTextLeft"> Assembly language is any low-level programming language where
-                            is a strong correspondence between instructions in the language and the machine code instruction.
-                            It is also called machine-oriented. Assembly is always designed for one
-                            specific computer architecture because it depends on the machine code instructions.
-                            The code is converted into machine code with assembler.  </span>
-                    </div>
-                </div>
+                <button id="assembly" class="grid-item">
+                    <div> Assembly </div>
+                </button>
+
 
 
                 <div></div>
                 <div></div>
                 <!--grid 5    1943-->
-                <button id="eniac_programmers" class="grid-item" style="background-image: url('womenInTech/eniac.jpg')">
+                <button id="eniac_programmers" class="grid-item" style="background-image: url('/womenInTech/eniac.jpg')">
                     <div>The ENIAC programmers</div>
                 </button>
 
@@ -111,13 +108,15 @@
                 <div></div>
                 <div></div>
                 <!--grid 6-->
-                <div id="2060" class="grid-item">Autocode 1952</div>
+                <button id="autocode" class="grid-item">
+                    <div> Autocode </div>
+                </button>
 
                 <div></div>
                 <div></div>
                 <!-- grid 7   1949-->
                 <button id="graceHopper" class="grid-item"
-                        style="background-image: url('womenInTech/Grace_Hopper_Img.jpg')">
+                        style="background-image: url('/womenInTech/Grace_Hopper_Img.jpg')">
                     <div>Grace Hopper (1906 - 1992)</div>
                 </button>
 
@@ -127,16 +126,9 @@
                 <div></div>
 
                 <!-- grid 8-->
-                <div id="2080" class="grid-item">
-                    <div class="tooltip">ALGOL 1958
-                        <span class="toolTipText">Mathematician Grace Hopper completes A-0,
-                            a program that allows a computer user to use English-like words instead of numbers
-                            to give the computer instructions. It possessed several features of a modern-day compiler
-                            and was written for the UNIVAC I computer, the first commercial business computer system in
-                            the United States.</span>
-
-                    </div>
-                </div>
+                <button id="algol" class="grid-item">
+                    <div> ALGOL </div>
+                </button>
 
                 <div></div>
                 <div></div>
@@ -144,7 +136,7 @@
                 <div></div>
 
                 <!--grid 9    1950-->
-                <button id="idaRhodes" class="grid-item" style="background-image: url('womenInTech/ida.jpg')">
+                <button id="idaRhodes" class="grid-item" style="background-image: url('/womenInTech/ida.jpg')">
                     <div>Ida Rhodes (1900-1986)</div>
                 </button>
 
@@ -155,18 +147,15 @@
                 <div></div>
 
                 <!-- grid 10-->
-                <div id="1990" class="grid-item">
-                    <div class="tooltip"> (: ELER :)
-                        <span class="toolTipTextLeft"> Eler Wohlmuth wird seiner Zeit der beste
-                            Programmierer auf der Welt sein. Ich würde auch gerns so viel können wie er.</span>
-                    </div>
-                </div>
+                <button id="c" class="grid-item">
+                    <div> C </div>
+                </button>
 
                 <div></div>
                 <div></div>
 
                 <!--grid 11   1955-->
-                <button id="annieEasley" class="grid-item" style="background-image: url('womenInTech/annie.jpg')">
+                <button id="annieEasley" class="grid-item" style="background-image: url('/womenInTech/annie.jpg')">
                     <div>Annie Easley (1933 - 2011)</div>
                 </button>
 
@@ -175,14 +164,15 @@
                 <div></div>
 
                 <!-- grid 12-->
-                <div id="2043350" class="grid-item">C 1972</div>
-
+                <button id="ada" class="grid-item">
+                    <div> ADA </div>
+                </button>
                 <div></div>
                 <div></div>
 
 
                 <!--grid 13    1956-->
-                <button id="evelynBoyd" class="grid-item" style="background-image: url('womenInTech/evelyn.jpg')">
+                <button id="evelynBoyd" class="grid-item" style="background-image: url('/womenInTech/evelyn.jpg')">
                     <div>Evelyn Boyd Granville (1924 - )</div>
                 </button>
 
@@ -192,7 +182,9 @@
                 <div></div>
 
                 <!--grid 14-->
-                <div id="2043730" class="grid-item">ADA 1980/81</div>
+                <button id="cpp" class="grid-item">
+                    <div>C++</div>
+                </button>
 
                 <div></div>
                 <div></div>
@@ -200,7 +192,7 @@
                 <div></div>
 
                 <!--grid 15   1962-->
-                <button id="shirley" class="grid-item" style="background-image: url('womenInTech/steve.jpg')">
+                <button id="shirley" class="grid-item" style="background-image: url('/womenInTech/steve.jpg')">
                     <div>Stephanie "Steve" Shirley</div>
                 </button>
 
@@ -211,13 +203,13 @@
 
 
                 <!--grid 16-->
-                <div id="2043450" class="grid-item">C 1972</div>
+                <div id="2043450" class="grid-item">Objective C</div>
                 <div></div>
                 <div></div>
 
 
                 <!--grid 17   1965-->
-                <button id="sisterMary" class="grid-item" style="background-image: url('womenInTech/sister.png')">
+                <button id="sisterMary" class="grid-item" style="background-image: url('/womenInTech/sister.png')">
                     <div>Sister Mary Kenneth Keller</div>
                 </button>
 
@@ -225,14 +217,16 @@
                 <div></div>
 
                 <!--grid 18-->
-                <div id="18" class="grid-item">SQL 1972</div>
+                <button id="perl" class="grid-item">
+                    <div>Perl</div>
+                </button>
 
                 <div></div>
                 <div></div>
 
 
                 <!--grid 19   1969-->
-                <button id="margaret" class="grid-item" style="background-image: url('womenInTech/margaret.jpg')">
+                <button id="margaret" class="grid-item" style="background-image: url('/womenInTech/margaret.jpg')">
                     <div>Margaret Hamilton</div>
                 </button>
 
@@ -243,7 +237,9 @@
                 <div></div>
 
                 <!--grid 20-->
-                <div id="2423040" class="grid-item">PASCAL 1970</div>
+                <button id="haskell" class="grid-item">
+                    <div>Haskell</div>
+                </button>
 
                 <div></div>
                 <div></div>
@@ -251,7 +247,7 @@
                 <div></div>
 
                 <!--grid 21   1972-->
-                <button id="karen" class="grid-item" style="background-image: url('womenInTech/karen.jpg')">
+                <button id="karen" class="grid-item" style="background-image: url('/womenInTech/karen.jpg')">
                     <div>Karen S. Jones (1935 - 2007)</div>
                 </button>
 
@@ -261,14 +257,16 @@
                 <div></div>
 
                 <!--grid 22-->
-                <div id="20342360" class="grid-item">SQL 1972</div>
+                <button id="python" class="grid-item">
+                    <div> Python </div>
+                </button>
 
                 <div></div>
                 <div></div>
 
 
                 <!--grid 23   1973-->
-                <button id="adele" class="grid-item" style="background-image: url('womenInTech/adele.jpg')">
+                <button id="adele" class="grid-item" style="background-image: url('/womenInTech/adele.jpg')">
                     <div>Adele Goldberg</div>
                 </button>
 
@@ -278,13 +276,15 @@
 
 
                 <!--grid 24-->
-                <div id="243040" class="grid-item">PASCAL 1970</div>
+                <button id="visualbasic" class="grid-item">
+                    <div> Visual Basic </div>
+                </button>
 
                 <div></div>
                 <div></div>
 
                 <!--grid 25   1979-->
-                <button id="carol" class="grid-item" style="background-image: url('womenInTech/carol.jpg')">
+                <button id="carol" class="grid-item" style="background-image: url('/womenInTech/carol.jpg')">
                     <div>Carol Shaw (1955 –)</div>
                 </button>
 
@@ -295,7 +295,9 @@
 
 
                 <!--grid 26-->
-                <div id="20360" class="grid-item">SQL 1972</div>
+                <button id="javascript" class="grid-item">
+                    <div> Javascript </div>
+                </button>
 
                 <div></div>
                 <div></div>
@@ -305,7 +307,7 @@
 
                 <!--grid 27   1985-->
                 <button id="radia" class="grid-item" class="grid-item" style="background-image:
-                url('womenInTech/radia.jpg')">
+                url('/womenInTech/radia.jpg')">
                     <div>Radia Perlman (1958 - )</div>
                 </button>
 
@@ -316,14 +318,16 @@
                 <div></div>
 
                 <!--grid 28-->
-                <div id="28" class="grid-item">SQL 1972</div>
+                <button id="php" class="grid-item">
+                    <div>PHP</div>
+                </button>
 
                 <div></div>
                 <div></div>
 
 
                 <!--grid 29   1987-->
-                <button id="anita" class="grid-item" style="background-image: url('womenInTech/anita.jpg')">
+                <button id="anita" class="grid-item" style="background-image: url('/womenInTech/anita.jpg')">
                     <div>Anita Borg</div>
                 </button>
 
@@ -333,14 +337,21 @@
 
 
                 <!--grid 30-->
-                <div id="6" class="grid-item">SQL 1972</div>
+                <button id="csharp" class="grid-item">
+                    <div>C#</div>
+                </button>
 
                 <div></div>
                 <div></div>
 
                 <!--grid 31   2008-->
-                <button id="barbara" class="grid-item" style="background-image: url('womenInTech/barbara.jpg')">
+                <button id="barbara" class="grid-item" style="background-image: url('/womenInTech/barbara.jpg')">
                     <div>Barbara Liskov</div>
+                </button>
+
+                <!--grid 31   2008-->
+                <button id="kotlin" class="grid-item" style="background-image: url('/womenInTech/barbara.jpg')">
+                    <div>Kotlin</div>
                 </button>
 
                 <div></div>
@@ -354,7 +365,7 @@
     </section>
 
     <section class="section">
-        <figure class="image-container"><img src="Images/backround2.jpg"/></figure>
+        <figure class="image-container"><img src="/Images/backround2.jpg"/></figure>
         <article class="content">
 
             <h1>21. Century</h1>
@@ -375,7 +386,7 @@
                 <div></div>
                 <div></div>
 
-                <div id="20420" class="grid-item" style="background-image: url('Images/backround.jpg'); ">
+                <div id="20420" class="grid-item" style="background-image: url('/Images/backround.jpg'); ">
                     <div class="tooltip"> Objective-C 1983
                         <span class="toolTipText"> Bezeichnend ist, dass ihr wissenschaftlicher Beitrag zu
                             ihren Lebzeiten kaum Anerkennung fand. Erst Mitte des 20. Jahrhunderts, mit Beginn des
@@ -461,7 +472,22 @@
     </div>
 
 </div>
+<!--Plankakuel-->
+<div id="plankakuel_content" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p>Plankakül
+            The world’s first complete high-level language was designed in 1940s (probably between 1941 and 1945, but the concept first published in 1948), by the german computer pioneer Konrad Zuse, the creator of the first relay computer
+            From 1941-1946 (at the same time he developed his Z4 computer), Konrad Zuse developed ideas as to how his machines could be programmed in a very powerful way. The language Plankalkül was initially described in Zuse’s planned Ph.D. dissertation in 1943, later developed in his 1945 (also unpublished, it was still wartime) work "Plankalkül. Theorie del angewandten Logistik.", and finally reached the public in a 1948 article (but still did not attract much feedback and for a long time to come programming a computer would only be thought of as programming with machine code). Plankalkül was eventually more comprehensively published in a 1972 paper, while the first compiler for it was implemented as late as in 1998.
+
+            <a href="https://history-computer.com/plankalkul-complete-history-of-the-plankalkul-programming-language/">
+
+            </a></p>
+    </div>
+
+</div>
 <!--Edith Clarke-->
 <div id="edithClarke_content" class="modal">
 
@@ -483,6 +509,19 @@
             Source:
             <a href="https://www.hackerearth.com/blog/developers/top-women-programmers-history/">
                 Top women programmers in history | HackerEarth Blog
+            </a></p>
+    </div>
+
+</div>
+<!--Assembly-->
+<div id="assembly_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p>Assembly language was used in the Electronic Delay Storage Automatic Calculator (EDSAC). Assembly language was a type of low-level programming language that simplified the language of machine code. In other words, the specific instructions necessary to operate a computer.
+            Source:
+            <a href="https://devskiller.com/history-of-programming-languages/">
             </a></p>
     </div>
 
@@ -522,6 +561,18 @@
 
 </div>
 
+<!-- Autocode -->
+<div id="autocode_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p>In 1952 British computer scientist Alick Glennie  developed the first autocode , or programming language, for the Manchester Mark 1  computer at the University of Manchester. This was the first compiled programming language.
+            <a href="https://www.historyofinformation.com/detail.php?id=3904">
+            </a></p>
+    </div>
+
+</div>
 
 <!--Grace Hopper-->
 <div id="graceHopper_content" class="modal">
@@ -548,6 +599,19 @@
 
 </div>
 
+<!--ALGOL-->
+<div id="algol_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p>ALGOL 1958
+            ALGOL, computer programming language designed by an international committee of the Association of Computing Machinery (ACM), led by Alan J. Perlis of Carnegie Mellon University, during 1958–60 for publishing algorithms, as well as for doing computations. Like LISP, ALGOL had recursive subprograms—procedures that could invoke themselves to solve a problem by reducing it to a smaller problem of the same kind. ALGOL introduced block structure, in which a program is composed of blocks that might contain both data and instructions and have the same structure as an entire program. Block structure became a powerful tool for building large programs out of small components.
+            <a href="https://www.britannica.com/technology/ALGOL-computer-language">
+            </a></p>
+    </div>
+
+</div>
 
 <!--Ida Rhodes-->
 <div id="idaRhodes_content" class="modal">
@@ -570,6 +634,18 @@
 
 </div>
 
+<!-- C -->
+<div id="c_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p> C
+            C programming is a general-purpose, procedural, imperative computer programming language developed in 1972 by Dennis M. Ritchie at the Bell Telephone Laboratories to develop the UNIX operating system. C is the most widely used computer language. It keeps fluctuating at number one scale of popularity along with Java programming language, which is also equally popular and most widely used among modern software programmers.
+            <a href="https://www.britannica.com/technology/ALGOL-computer-language">
+            </a></p>
+    </div>
+
 </div>
 
 <!--Annie Easley-->
@@ -590,14 +666,26 @@
             Still wanting to grow her knowledge, she then returned to school to get her degree in Mathematics
             while still working full time. An advocate for equality in the workplace,
             she later took on the role of equal employment opportunity counsellor at NASA
-            and helped supervisors address issues of gender, race and age discrimination.</p>
+            and helped supervisors address issues of gender, race and age discrimination.
         Source:
         <a href="https://blog.hatchcoding.com/women-who-code-meet-historys-greatest-female-programmers">
             Women Who Code: Meet History's Greatest Female Programmers
         </a></p>
 
     </div>
+</div>
 
+<!--ADA-->
+<div id="ada_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p>Ada is a modern programming language designed for large, long-lived applications – and embedded systems in particular – where reliability and efficiency are essential. It was originally developed in the early 1980s (this version is generally known as Ada 83) by a team led by Dr. Jean Ichbiah at CII-Honeywell-Bull in France. The language was revised and enhanced in an upward compatible fashion in the early 1990s, under the leadership of Mr. Tucker Taft from Intermetrics in the U.S. The resulting language, Ada 95, was the first internationally standardized (ISO) Object-Oriented Language.
+            Source:
+            <a href="https://www.adaic.org/advantages/ada-overview/">
+            </a></p>
+    </div>
 </div>
 
 <!--Evelyn Granville Boyd-->
@@ -622,6 +710,20 @@
 
 </div>
 
+<!--C++-->
+<div id="cpp_content" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <p>C++
+            C++ is a general-purpose programming language that was developed as an enhancement of the C language to include object-oriented paradigm. It is an imperative and a compiled language.
+            C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same.
+            <a href="https://www.geeksforgeeks.org/introduction-to-c-programming-language/">
+            </a></p>
+    </div>
+
+</div>
 <!--Steve Shirley-->
 <div id="shirley_content" class="modal">
 
@@ -883,7 +985,7 @@
 </div>
 
 
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="/main.js"></script>
 
 </body>
 </html>
