@@ -39,22 +39,9 @@ function load_idaRhodes_page1() {
 
 function load_idaRhodes_page2() {
 
-
-    fetch('contentFiles/idaRhodes_page2.json')
-        .then(
-            function(response) {
-                if (response.status !== 200) {
-                    console.log('Status Code: ' + response.status);
-                    return;
-                }
-                response.json().then(function(data) {
-                    console.log(data);
-                });
-            }
-        )
-        .catch(function(err) {
-            console.log(err);
-        });
+    fetch ("contentFiles/idaRhodes_page2.xml")
+        .then(x => x.text())
+        .then(y => document.getElementById("idaRhodes_content").innerHTML = y);
 }
 
 
