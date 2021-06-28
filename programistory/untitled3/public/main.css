@@ -220,8 +220,8 @@ body {
 
 /* box Content */
 .box-content {
-    background-color: #fefefe;
-    color: black;
+    background-color: transparent;
+    color: white;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;

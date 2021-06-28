@@ -26,15 +26,10 @@ function load_adaLovelace_page_2() {
 }
 
 function load_idaRhodes_page1() {
-    let request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            document.getElementById("ida").innerHTML =
-                this.responseText;
-        }
-    };
-    request.open("GET", "contentFiles/idaRhodes_page1.xml", true);
-    request.send();
+
+    fetch ("contentFiles/idaRhodes_page1.xml")
+        .then(x => x.text())
+        .then(y => document.getElementById("idaRhodes_content").innerHTML = y);
 }
 
 function load_idaRhodes_page2() {
