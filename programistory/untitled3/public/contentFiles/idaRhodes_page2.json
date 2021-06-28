@@ -1,0 +1,25 @@
+{
+    "note": {
+        "parsererror": {
+            "-on": "1.0",
+            "-encoding": "UTF-8",
+            "h3": [
+                "This page contains the following errors:",
+                {
+                    "#item": {
+                        "div": {
+                            "-version": "1.0",
+                            "-encoding": "UTF-8",
+                            "#text": "error on line 4 at column 56: Entity 'times' not defined\n"
+                        }
+                    }
+                },
+                "Below is a rendering of the page up to the first error."
+            ]
+        },
+        "span": {
+            "-class": "close",
+            "-onclick": "closeModal();"
+        }
+    }
+}

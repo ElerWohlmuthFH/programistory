@@ -38,15 +38,23 @@ function load_idaRhodes_page1() {
 }
 
 function load_idaRhodes_page2() {
-    let request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            document.getElementById("ida").innerHTML =
-                this.responseText;
-        }
-    };
-    request.open("GET", "contentFiles/idaRhodes_page2.xml", true);
-    request.send();
+
+
+    fetch('contentFiles/idaRhodes_page2.json')
+        .then(
+            function(response) {
+                if (response.status !== 200) {
+                    console.log('Status Code: ' + response.status);
+                    return;
+                }
+                response.json().then(function(data) {
+                    console.log(data);
+                });
+            }
+        )
+        .catch(function(err) {
+            console.log(err);
+        });
 }
 
 
