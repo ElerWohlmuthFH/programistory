@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require('express'); //import express
 const router = express.Router();
 
 router.get('/', (req, res) => {
 
-    if(req.session.loggedin == true) {
+    if (req.session.loggedin === true) {
         res.render('index', {
             loggedin: true,
             userid: req.session.userid,
@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 
 router.get('/register', (req, res) => {
 
-    if(req.session.loggedin == true) {
+    if (req.session.loggedin === true) {
         res.redirect("/main");
         return;
     }
@@ -28,7 +28,7 @@ router.get('/register', (req, res) => {
 
 router.get('/login', (req, res) => {
 
-    if(req.session.loggedin == true) {
+    if (req.session.loggedin === true) {
         res.redirect("/main");
         return;
     }
@@ -39,7 +39,7 @@ router.get('/login', (req, res) => {
 
 router.get('/logout', (req, res) => {
 
-    if(req.session.loggedin == true) {
+    if (req.session.loggedin === true) {
         req.session.destroy()
     }
     res.redirect("/");

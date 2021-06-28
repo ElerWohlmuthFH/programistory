@@ -1,25 +1,25 @@
-/*Bootstrap login menu*/
+/*Bootstrap login menu styles*/
 
-body{
+body {
     background-color: wheat;
 }
 
-nav{
-    background-image:  url("Images/backround.jpg");
+nav {
+    background-image: url("Images/backround.jpg");
     color: #fff;
-    padding: 30px 60px;
+    padding: 30px 60px; /*30 top/bottom & 60 left/right*/
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*puts elements on nav on different corners*/
 }
 
-nav ul{
-    display:flex;
+nav ul {
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-nav li{
-    list-style: none;
+nav li {
+    list-style: none; /*removes all dots on nav*/
 }
 
 nav li a {
@@ -29,11 +29,12 @@ nav li a {
     padding: 5px 8px;
 }
 
-nav li a:hover{
+/*when hovering over anchor elements*/
+nav li a:hover {
     color: yellow;
     text-decoration: none;
 }
 
-.backToHome{
+.backToHome {
     box-sizing: border-box;
 }
