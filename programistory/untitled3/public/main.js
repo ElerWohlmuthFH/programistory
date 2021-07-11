@@ -1,3 +1,42 @@
+//json to hide key
+let apiKey = {
+    key: '911ec22e-0177-4acc-80d0-0ab7766a85ff'
+}
+
+//call API, url global metrics, specify parameters using ?
+request('GET', 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?CMC_PRO_API_KEY=' + apiKey.key)
+    .then((r1) => {  //call API, wait for server to get response, which is captured in r1
+        let x1 = JSON.parse(r1.target.responseText);
+        console.log(x1.data);
+    }).catch(err => {
+    console.log(err);
+})
+
+function request(method, url) {
+    return new Promise(function (resolve, reject) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.onload = resolve;
+        xhr.onerror = reject;
+        xhr.send();
+    });
+}
+
+//listings/latest
+//quotes/latest
+//symbol: BTC,ETH,LTC,ADA&convert=EUR
+/*let url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info",
+    qString = "?CMC_PRO_API_KEY=" + apiKey + "&symbol=BTC";
+
+fetch(url +qString)
+    .then(function (resp){
+   return resp.json();
+})
+    .then(function (data){
+       console.log(data.data);
+    });*/
+
+
 //AJAX - LOAD XML FILES
 //functions to load xml files:
 function load_adaLovelace_page_1() {
@@ -27,14 +66,14 @@ function load_adaLovelace_page_2() {
 
 function load_idaRhodes_page1() {
 
-    fetch ("contentFiles/idaRhodes_page1.xml")
+    fetch("contentFiles/idaRhodes_page1.xml")
         .then(x => x.text())
         .then(y => document.getElementById("idaRhodes_content").innerHTML = y);
 }
 
 function load_idaRhodes_page2() {
 
-    fetch ("contentFiles/idaRhodes_page2.xml")
+    fetch("contentFiles/idaRhodes_page2.xml")
         .then(x => x.text())
         .then(y => document.getElementById("idaRhodes_content").innerHTML = y);
 }
