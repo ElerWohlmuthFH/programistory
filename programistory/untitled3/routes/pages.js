@@ -45,5 +45,16 @@ router.get('/logout', (req, res) => {
     res.redirect("/");
 });
 
+//method to get weather
+router.get('/weather', (req, res) => {
+
+    if (req.session.loggedin === true) {
+        res.redirect("/weather");
+        return;
+    }
+
+    res.render('weather');
+});
+
 
 module.exports = router;
