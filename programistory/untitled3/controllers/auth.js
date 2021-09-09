@@ -181,6 +181,8 @@ exports.update = async (req, res) => {
 
         const {userid, newpwd} = req.body;
 
+        console.log(userid,newpwd);
+
         if (!userid || !newpwd) {
             return res.status(400).render('index', {
                 message: 'Please provide an userid!'
@@ -192,7 +194,7 @@ exports.update = async (req, res) => {
 
         // INSERT INTO users SET
 
-        db.query('UPDATE users SET password WHERE id = ?', {password: hashedPassword, id: userid}, (error, results) => {
+        db.query('UPDATE users SET password = ? WHERE id = ?', [hashedPassword, userid], (error, results) => {
 
         // db.query('INSERT INTO users SET? WHERE ?', {password: newpwd, id: userid}, (error, results) => {
 
@@ -202,6 +204,7 @@ exports.update = async (req, res) => {
                 res.status(401).render('index', {
                     message: 'Incorrect pwd!'
                 })
+                console.log(error);
             } else {
                 console.log(results);
                 //session
