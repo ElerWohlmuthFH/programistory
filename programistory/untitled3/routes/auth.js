@@ -9,4 +9,6 @@ router.post('/login', authController.login);
 
 router.delete('/delete', authController.delete);
 
+router.put('/update', authController.update);
+
 module.exports = router;

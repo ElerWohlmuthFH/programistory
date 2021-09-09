@@ -40,6 +40,24 @@
                 </button>
             </form>
 
+<!--            <form method="get" action='/changePW.html'>-->
+<!--                <button type="submit">Continue</button>-->
+<!--                <button onclick="window.location.href = 'changePW.html';">Hier klicken</button>-->
+<!--            </form>-->
+
+            <form id= "update" action="/auth/update" method="PUT">
+                <div class="form-group">
+                    <input id="userid" name="userid" type="hidden" value="{{userid}}">
+                    <label for="newpwd">change Password </label>
+                    <input type="password" class="form-control" id="newpwd" name="newpwd">
+                </div>
+
+                <button id="submitUpdate" type="button" onclick="update(newpwd)" class="btn btn-primary">submit</button>
+            </form>
+
+
+
+
 
         {{/if}}
 
