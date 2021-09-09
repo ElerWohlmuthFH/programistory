@@ -5,6 +5,7 @@ class Userinterface {
         this.defaultCity = "London";
     }
 
+    //takes data from what fetch method returns
     populateUI(data) {
         //de-structure vars
 
@@ -12,6 +13,7 @@ class Userinterface {
 
         this.uiContainer.innerHTML = `
         
+<!--  markup: passing in objects we need: name, max temp, min temp-->
         <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body justify-content-center">
                 <h5 class="card-title">${data.name}</h5>

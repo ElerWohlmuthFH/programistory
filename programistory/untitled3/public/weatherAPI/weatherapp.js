@@ -7,9 +7,11 @@ const ui = new Userinterface();
 
 const search = document.getElementById("searchUser");
 const button = document.getElementById("submit");
+
 button.addEventListener("click", () => {
     const currentVal = search.value;
-
+//whenever submit is hit a new value is captured
+    //.then to access data
     ft.getCurrent(currentVal).then((data) => {
         //call a UI method//
         ui.populateUI(data);
