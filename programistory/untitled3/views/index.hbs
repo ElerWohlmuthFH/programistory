@@ -40,10 +40,6 @@
                 </button>
             </form>
 
-<!--            <form method="get" action='/changePW.html'>-->
-<!--                <button type="submit">Continue</button>-->
-<!--                <button onclick="window.location.href = 'changePW.html';">Hier klicken</button>-->
-<!--            </form>-->
 
             <form id= "update" action="/auth/update" method="PUT">
                 <div class="form-group">
@@ -56,15 +52,19 @@
             </form>
 
 
-
-            <ul>
-            <li><a href="/changePassword">Change Password</a></li>
-            </ul>
         {{/if}}
 
         {{#if userDeleted }}
             <h4 class="alert alert-primary mt-4">
                 <b>Deleted User</b><br>
+                {{name}}<br>
+                {{email}}
+            </h4>
+        {{/if}}
+
+        {{#if passwordUpdated }}
+            <h4 class="alert alert-primary mt-4">
+                <b>Password changed</b><br>
                 {{name}}<br>
                 {{email}}
             </h4>

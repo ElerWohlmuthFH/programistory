@@ -192,17 +192,12 @@ exports.update = async (req, res) => {
         let hashedPassword = await bcrypt.hash(newpwd, 8);//8 rounds of encryption
         console.log(hashedPassword);
 
-        // INSERT INTO users SET
-
         db.query('UPDATE users SET password = ? WHERE id = ?', [hashedPassword, userid], (error, results) => {
-
-        // db.query('INSERT INTO users SET? WHERE ?', {password: newpwd, id: userid}, (error, results) => {
-
 
             console.log(results);
             if (error) {
                 res.status(401).render('index', {
-                    message: 'Incorrect pwd!'
+                    message: 'Update not successful!'
                 })
                 console.log(error);
             } else {
@@ -215,7 +210,7 @@ exports.update = async (req, res) => {
                 req.session.destroy();
 
                 return res.status(200).render("index", {
-                    userDeleted: true,
+                    passwordUpdated: true,
                     name: name,
                     email: email
                 });
@@ -228,73 +223,3 @@ exports.update = async (req, res) => {
 
 
 }
-
-
-// exports.update = async (req, res) => {
-//     try {
-//         const {email, password} = req.body;
-//
-//         if (!email || !password) {
-//             return res.status(400).send(JSON.stringify({
-//                 loggedin: false,
-//                 message: 'Please provide an email and password'
-//             }))
-//
-//             /*
-//             return res.status(400).render('login', {
-//                 message: 'Please provide an email and password'
-//             })*/
-//         }
-//         //mysql query to select all cols from database
-//         db.query('UPDATE users SET ? WHERE ?', [email], async (error, results) => {
-//             console.log(results);
-//             //if no results and password from user not correct
-//             if (!results || results.length === 0 || !(await bcrypt.compare(password, results[0].password))) {
-//                 /*
-//                 res.status(401).render('login', {
-//                     message: 'Incorrect Email or Password'
-//                 })
-//                 */
-//
-//                 return res.status(400).send(JSON.stringify({
-//                     loggedin: false,
-//                     message: 'Incorrect Email or Password'
-//                 }))
-//
-//
-//             } else {
-//                 const id = results[0].id;
-//                 //to start putting tokens in cookies
-//                 const token = jwt.sign({id}, process.env.JWT_SECRET, {
-//                     expiresIn: process.env.JWT_EXPIRES_IN
-//                 });
-//
-//                 console.log("The token is: " + token);
-//
-//                 // //session
-//                 // req.session.loggedin = true;
-//                 // req.session.sessionid = token;
-//                 // req.session.userid = id;
-//                 // req.session.name = results[0].name;
-//                 // req.session.email = email;
-//
-//                 const cookieOptions = {
-//                     expires: new Date(
-//                         Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000 //convert to millis
-//                     ),
-//                     //only set cookies on http env
-//                     httpOnly: true
-//                 }
-//                 //sets up cookie in browser
-//                 res.cookie('jwt', token, cookieOptions);
-//
-//                 res.status(200).send(JSON.stringify(req.session))
-//                 //res.status(200).redirect("/");
-//             }
-//         })
-//
-//     } catch (error) {
-//         console.log(error);
-//     }
-//
-// }
